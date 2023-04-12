@@ -1,0 +1,32 @@
+.rent {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:0px 20px 20px 0px ;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	padding:8px 22px;
+	text-decoration:none;
+}
+
+.buy {
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:20px 0px 0px 20px ;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:22px;
+	padding:8px 22px;
+	text-decoration:none;
+}
+.flexsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

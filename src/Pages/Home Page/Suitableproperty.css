@@ -1,0 +1,36 @@
+.Find-buttun {
+  background-color: transparent;
+  border-radius: 42px;
+  border: 1px solid #3a4a3c;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 14px;
+  padding: 10px 50px;
+  text-decoration: none;
+}
+.Find-buttun:hover {
+  background-color: transparent;
+}
+.Find-buttun:active {
+  position: relative;
+  top: 1px;
+}
+
+.marginweb {
+  margin-top: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .margintop-mobile {
+    margin-top: 30vh;
+  }
+  .mobile-disply-none {
+    display: none;
+  }
+
+  .section3text {
+    height: 50vh;
+  }
+}

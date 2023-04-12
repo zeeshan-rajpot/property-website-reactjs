@@ -1,0 +1,26 @@
+.section3div{
+    background-image: url(../../images/Path\ 2738.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+.dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Learnbtn{
+    color: blue;
+    border-bottom: 1px dotted blue;
+    text-decoration: none;
+}
+@media only screen and (max-width: 600px){
+
+.p{
+    font-size: 15px;
+}
+.margin3sectiontop{
+    margin-top: 57vh;
+}
+}

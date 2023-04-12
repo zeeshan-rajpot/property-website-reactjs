@@ -1,0 +1,11 @@
+.search-box{
+    border-radius: 60px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar {
+    background-color: white;
+  }
+  .navbar-nav .nav-link.active{
+    color: #CCC462;
+  }
