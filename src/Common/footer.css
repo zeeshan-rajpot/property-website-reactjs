@@ -1,25 +1,24 @@
-.bgimage{
-    margin-top: 30px;
-    padding-top: 10px;
-background-image: url(../images/Component\ 3\ –\ 1.svg);
-background-repeat: no-repeat;
-background-size: 700px;
-background-color: #CCC462;
-background-position: bottom right;
+.bgimage {
+  margin-top: 30px;
+  padding-top: 10px;
+  background-image: url(../images/Component\ 3\ –\ 1.svg);
+  background-repeat: no-repeat;
+  background-size: 700px;
+  background-color: #ec6337;
+  background-position: bottom right;
 }
-.p{
-    color: white;
+.p {
+  color: white;
 }
-.marginright{
-margin-left:20px ;
+.marginright {
+  margin-left: 20px;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 600px){
-
-	.bgimage{
-        background-image: none;
-    }
+@media only screen and (max-width: 600px) {
+  .bgimage {
+    background-image: none;
+  }
 }
