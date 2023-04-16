@@ -1,5 +1,5 @@
 .Herosection{
-    height: 90vh;
+    height: 90%;
 
    
 }
@@ -8,22 +8,32 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    
-   
-    
+
 }
 .h1{
-    font-size: 50px;
+    font-size: 6rem;
+    font-weight: 800;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 2400px){
 	.h1{
-        font-size: 40px;
+        font-size: 6rem;
     }
     .HerosectionImg{
-        width: 500px;
-        height: 500px;
+        width: 90rem;
+        height: 90rem;
+    }
+  
+}
+
+@media only screen and (max-width: 600px){
+	.h1{
+        font-size: 4rem;
+    }
+    .HerosectionImg{
+        width: 50rem;
+        height: 50rem;
     }
     .Herosection{
-        height: 70vh;
+        height: auto;
     }
 }

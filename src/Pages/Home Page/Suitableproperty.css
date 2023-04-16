@@ -4,7 +4,7 @@
   border: 1px solid #3a4a3c;
   display: inline-block;
   cursor: pointer;
-  color: #000000;
+  color: #FC780B;
   font-family: Arial;
   font-size: 14px;
   padding: 10px 50px;
@@ -17,15 +17,14 @@
   position: relative;
   top: 1px;
 }
-
-.marginweb {
-  margin-top: 1vh;
+.Sutiteableheading{
+  font-size: 3rem;
+  font-weight: 600;
 }
 
+
 @media only screen and (max-width: 600px) {
-  .margintop-mobile {
-    margin-top: 30vh;
-  }
+
   .mobile-disply-none {
     display: none;
   }
@@ -33,4 +32,5 @@
   .section3text {
     height: 50vh;
   }
+
 }

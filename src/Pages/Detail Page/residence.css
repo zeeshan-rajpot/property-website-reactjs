@@ -1,0 +1,17 @@
+.vertical-line {
+    border-left: 1px solid grey; /* specify the border style and color for the vertical line */
+    height: 100%; /* set the height to auto to adjust the height based on content */
+    margin: 0; /* add margin to adjust the spacing around the vertical line */
+  }
+  .line-col{
+    width: 1px;
+  }
+  .price{
+    color: #EC6337;
+    font-size: 800;
+  }
+  @media only screen and (max-width: 600px){
+    .mobiledispalynone{
+   display: none;
+    }
+    }

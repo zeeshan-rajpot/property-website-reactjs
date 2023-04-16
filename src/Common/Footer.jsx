@@ -57,30 +57,16 @@ export default function Footer() {
             </Col>
 
             <Col md="3" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
-              {/* <h6 className="text-uppercase fw-bold mb-4 p">Contact</h6>
-              <p className="p">
-                <span icon="home" className="me-2" />
-                New York, NY 10012, US
-              </p>
-              <p className="p">
-                <span icon="envelope" className="me-3" />
-                info@example.com
-              </p>
-              <p className="p">
-                <span icon="phone" className="me-3" /> + 01 234 567 88
-              </p>
-              <p className="p">
-                <span icon="print" className="me-3" /> + 01 234 567 89
-              </p> */}
+             
             </Col>
           </Row>
           <Row>
             <Col>
-              <span className="p mr-1 marginright">
+              <span className="pp mr-1 marginright">
                 Ⓒ 2023 Inprop Holdings Inc. All rights reserved.
               </span>
-              <span className='p mr-1 marginright'>+1 617-300-0956 </span>
-              <span className='p marginright'>Terms of Service</span> <span className='p mr-1 marginright'> Privacy Policy</span>
+              <span className='pp mr-1 marginright'>+1 617-300-0956 </span>
+              <span className='pp marginright'>Terms of Service</span> <span className='pp mr-1 marginright'> Privacy Policy</span>
             </Col>
           </Row>
         </Container>

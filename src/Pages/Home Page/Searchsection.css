@@ -1,32 +1,48 @@
-.rent {
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:0px 20px 20px 0px ;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:22px;
-	padding:8px 22px;
-	text-decoration:none;
-}
-
-.buy {
-	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
-	border-radius:20px 0px 0px 20px ;
-	border:1px solid #18ab29;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:22px;
-	padding:8px 22px;
-	text-decoration:none;
+.rent{
+	padding: 8px 22px;
 }
 .flexsection{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.searchcontainer{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: auto;
+}
+@media only screen and (max-width: 600px){
+.searchcontainer{
+	
+	height: auto;
+}
+}
+.searchbarcolflex{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#dropdown-basic-button{
+	color: grey;
+    background: none;
+    border: none;
+font-size: 15px;
+
+	
+}
+.iconmargin{
+	margin-left: 20px;
+}
+.rentbuybtn{
+	border-radius: 0 55px 0 75px;
+	background-color: #EC6337;
+}
+.searchbtn{
+	border-radius: 55px 0 75px 0;
+	background-color: #EC6337;
+	color: white;
+}
+.dropdown-menu .dropdown-item {
+	font-size: 18px; /* Change to desired font size */
+  }

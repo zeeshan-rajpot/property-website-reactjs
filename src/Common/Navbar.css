@@ -9,3 +9,32 @@
   .navbar-nav .nav-link.active{
     color: #CCC462;
   }
+ 
+
+  .navpaddingright{
+    margin-right: 3rem;
+  }
+   .form-control{
+    margin-top: 5px;
+  height: 3rem;
+  padding-right:4rem ;
+  }
+  ::placeholder {
+    font-size: 14px; /* Increase the font size to your desired value */
+  }
+  input[type="text"] {
+    font-size: 18px; /* Increase the font size to your desired value */
+    
+  }
+  input[type="password"] {
+    font-size: 18px; /* Increase the font size to your desired value */
+    
+  }
+  
+  input[type="search"] {
+    font-size: 14px; /* Increase the font size to your desired value */
+  }
+  
+  .form-control:focus {
+    outline: none;
+  }

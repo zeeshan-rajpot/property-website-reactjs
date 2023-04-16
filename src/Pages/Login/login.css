@@ -1,0 +1,68 @@
+.rent {
+  /* background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%); */
+  background-color: white;
+  border-radius: 0px 20px 20px 0px;
+  border: 1px solid #ec6337;
+  display: inline-block;
+  cursor: pointer;
+  color: #ec6337;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 12px 40px;
+  text-decoration: none;
+}
+
+.buy {
+  /* background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%); */
+  background-color: white;
+  border-radius: 20px 0px 0px 20px;
+  border: 1px solid #ec6337;
+  display: inline-block;
+  cursor: pointer;
+  color: #ec6337;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 12px 40px;
+  text-decoration: none;
+}
+.itemcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.loginimg {
+  width: 800px;
+}
+@media only screen and (max-width: 600px) {
+  .loginimg {
+    width: 500px;
+  }
+}
+input {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding-top: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+.Continuebtn {
+  background-color: #ec6437;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 19px;
+  padding: 10px 76px;
+  text-decoration: none;
+}
+.bgimg {
+  box-shadow: -5px 9px 81px -17px rgba(0, 0, 0, 0.77);
+  -webkit-box-shadow: -5px 9px 81px -17px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: -5px 9px 81px -17px rgba(0, 0, 0, 0.77);
+  border-radius: 0px 0px 100px 100px;
+  margin-top: 0;
+}

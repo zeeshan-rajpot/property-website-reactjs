@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164" height="141" viewBox="0 0 164 141">
+  <defs>
+    <filter id="Rectangle_1150" x="0" y="0" width="164" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="exercise" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1150)">
+      <rect id="Rectangle_1150-2" data-name="Rectangle 1150" width="146" height="123" rx="27" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <text id="Exercise_equipment" data-name="Exercise equipment" transform="translate(10 83)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Exercise equipment</tspan></text>
+    <path id="excercise" d="M60.519,83.615V72.873A.873.873,0,0,0,59.646,72H42.188a.873.873,0,0,0-.873.873V83.615a17.456,17.456,0,0,0-7.856,14.573H28.221v-6.11a.873.873,0,0,0-.873-.873H23.856a.873.873,0,0,0-.873.873V94.7H20.365a.873.873,0,0,0-.873.873v2.619H16.873a.873.873,0,0,0-.873.873V104.3a.873.873,0,0,0,.873.873h2.619v2.619a.873.873,0,0,0,.873.873h2.619v2.619a.873.873,0,0,0,.873.873h3.492a.873.873,0,0,0,.873-.873v-6.11h6.69a17.509,17.509,0,0,0,5.288,6.8.873.873,0,0,0,.536.184H61.1a.873.873,0,0,0,.536-.184,17.452,17.452,0,0,0-1.116-28.356ZM17.746,103.425V99.934h1.746v3.492Zm3.492,3.492V96.442h1.746v10.475Zm5.238,3.492H24.729V92.95h1.746ZM43.061,73.746H58.773V82.6a17.371,17.371,0,0,0-1.746-.766V76.365a.873.873,0,0,0-.873-.873H45.679a.873.873,0,0,0-.873.873v5.469a17.372,17.372,0,0,0-1.746.766Zm12.221,7.536a17.521,17.521,0,0,0-8.729,0V77.238h8.729ZM28.221,99.934h19.2v3.492h-19.2Zm24.442-3.492h1.746v10.475H52.663Zm-1.746,13.967H49.171V92.95h1.746Zm-14.078-5.238H47.425v5.238H41.04a15.77,15.77,0,0,1-4.2-5.238Zm23.955,5.238H52.663v-1.746h2.619a.873.873,0,0,0,.873-.873v-2.619h2.619a.873.873,0,0,0,.873-.873V99.061a.873.873,0,0,0-.873-.873H56.155V95.569a.873.873,0,0,0-.873-.873H52.663V92.077a.873.873,0,0,0-.873-.873H48.3a.873.873,0,0,0-.873.873v6.11H35.2a15.713,15.713,0,1,1,25.59,12.221Zm-4.64-10.475H57.9v3.492H56.155Z" transform="translate(26.398 -56.942)" fill="#ec6337"/>
+  </g>
+</svg>

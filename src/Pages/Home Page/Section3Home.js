@@ -8,12 +8,9 @@ const Section3Home = () => {
     <>
       <div className="section3div margin3sectiontop">
         <Container>
-          <Row
-            className={"Herosection   marginweb"}
-            style={{ height: "60vh" }}
-          >
+          <Row className={"   marginweb"} style={{ height: "60vh" }}>
             <Col lg={5} className="HerosectionCol">
-              <h2>
+              <h2 className="readyheading">
                 <b>Ready</b>{" "}
               </h2>
 
@@ -26,11 +23,7 @@ const Section3Home = () => {
             <Col lg={1} className="HerosectionCol  mobile-disply-none">
               <img src={houseimg} />
             </Col>
-            <Col
-              lg={6}
-              className="HerosectionCol  "
-             
-            >
+            <Col lg={6} className="HerosectionCol  ">
               <p className="text-secondary  p">
                 Text fill up..... have ratings on our platform. A ‘Book It
                 Again’ percentage score tells you how a event has performed in

@@ -15,12 +15,16 @@
     border-bottom: 1px dotted blue;
     text-decoration: none;
 }
+.readyheading{
+    font-size: 3rem;
+}
+
 @media only screen and (max-width: 600px){
 
 .p{
-    font-size: 15px;
+    font-size: 1.5rem;
 }
-.margin3sectiontop{
-    margin-top: 57vh;
+.section3div{
+    height: auto;
 }
 }

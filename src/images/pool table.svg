@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164" height="141" viewBox="0 0 164 141">
+  <defs>
+    <filter id="Rectangle_1153" x="0" y="0" width="164" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pool_table" data-name="pool table" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Rectangle_1153)">
+      <rect id="Rectangle_1153-2" data-name="Rectangle 1153" width="146" height="123" rx="27" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <text id="Pool_table-2" data-name="Pool table" transform="translate(40 83)" font-size="14" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Pool table</tspan></text>
+    <path id="Path_2719" data-name="Path 2719" d="M33.507,162H4.033A4.037,4.037,0,0,0,0,166.033v17.6a4.037,4.037,0,0,0,4.033,4.033H33.507a4.037,4.037,0,0,0,4.033-4.033v-17.6A4.037,4.037,0,0,0,33.507,162ZM4.033,164.2A1.833,1.833,0,1,1,2.2,166.033,1.835,1.835,0,0,1,4.033,164.2ZM2.2,183.629a1.833,1.833,0,1,1,1.833,1.833A1.835,1.835,0,0,1,2.2,183.629Zm31.308,1.833a1.833,1.833,0,1,1,1.833-1.833A1.835,1.835,0,0,1,33.507,185.462Zm1.833-5.423a4.03,4.03,0,0,0-5.423,5.423H7.623A4.03,4.03,0,0,0,2.2,180.039V169.623A4.03,4.03,0,0,0,7.623,164.2H29.917a4.03,4.03,0,0,0,5.423,5.423Zm-1.833-12.174a1.833,1.833,0,1,1,1.833-1.833A1.835,1.835,0,0,1,33.507,167.866Z" transform="translate(54.058 -132.449)" fill="#ec6337"/>
+    <path id="Path_2720" data-name="Path 2720" d="M257.3,232a3.3,3.3,0,0,0-3.133,2.268,3.3,3.3,0,0,0-3.121,5.431,3.3,3.3,0,0,0,3.121,5.431,3.3,3.3,0,1,0,5.589-3.23,3.292,3.292,0,0,0,0-4.4A3.3,3.3,0,0,0,257.3,232Zm-3.8,11a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,253.5,243Zm0-4.4a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,253.5,238.6Zm3.8,6.6a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,257.3,245.2Zm0-4.4a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,257.3,240.8Zm0-4.4a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,257.3,236.4Z" transform="translate(-177.798 -197.317)" fill="#ec6337"/>
+    <path id="Path_2721" data-name="Path 2721" d="M83.3,292a3.3,3.3,0,1,0,3.3,3.3A3.3,3.3,0,0,0,83.3,292Zm0,4.4a1.1,1.1,0,1,1,1.1-1.1A1.1,1.1,0,0,1,83.3,296.4Z" transform="translate(-20.076 -252.918)" fill="#ec6337"/>
+  </g>
+</svg>
