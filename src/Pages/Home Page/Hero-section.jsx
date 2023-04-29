@@ -6,7 +6,7 @@ import houseimg from "../../images/Mask Group 1.png";
 const HeroSection = () => {
   return (
     <>
-      <Container>
+      <Container >
         <Row className={"Herosection"}>
           <Col lg={6} className="HerosectionCol">
             <h1 className="h1" style={{color:'#FC780B'}}>Your Home  Finder </h1>

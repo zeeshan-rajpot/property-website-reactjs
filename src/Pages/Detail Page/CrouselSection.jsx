@@ -15,7 +15,7 @@ const callback = function(index){
 }
   return (
    <>
-   <Carousel slides={slides} autoplay={false} interval={5000} onSlideChange={callback}/>
+   <Carousel slides={slides} autoplay={true} interval={5000} onSlideChange={callback}/>
    </>
   )
 }

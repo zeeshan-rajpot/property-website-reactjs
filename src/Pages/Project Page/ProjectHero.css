@@ -1,0 +1,33 @@
+.ProjectHeroBg{
+    background-image: url('../../images/projectcard.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* height: 60vh; */
+}
+.textcol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    margin-top: 250px;
+    margin-bottom: 250px;
+    
+}
+.textcol p{
+    width: 40%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+	.ProjectHeroBg{
+        background-image: url('../../images/projectcardc.png') ;
+        background-size:cover ;
+        height: 80vh;
+
+    }
+    .textcol p{
+        width: 80%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,33 @@
+.SearchBarProperties {
+  position: absolute;
+  padding: 15px;
+  background-color: white;
+  bottom: 3%;
+  right: 0%;
+  left: 0%;
+  border-radius: 20px;
+
+}
+
+.Find {
+  background-color: #ec6337;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  padding: 9px 40px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1920px) {
+    .SearchBarProperties {
+        position: absolute;
+        padding: 15px;
+        background-color: white;
+        bottom: 10%;
+        right: 0%;
+        left: 0%;
+      }
+    }

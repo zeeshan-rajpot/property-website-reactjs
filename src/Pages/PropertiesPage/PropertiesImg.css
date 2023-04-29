@@ -1,0 +1,66 @@
+.dflexincol{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .PropertiesMobileImg{
+      align-items: center !important;
+      margin-top: 10vh;
+
+    }
+  
+  }
+
+  .blureffectspan{
+ 
+background: rgba(255, 255, 255, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+}
+
+
+
+
+
+
+
+
+
+
+.box {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 70;
+  top: 80%;
+  text-align: center;
+  width: 60%;
+  background: rgba(255, 255, 255, 0.13);
+border-radius: 0 32px 32px 42px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.8px);
+-webkit-backdrop-filter: blur(4.8px);
+color: white;
+margin-left: 6px;
+}
+
+.marginb20{
+  margin-bottom: 20px;
+}
+#text{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

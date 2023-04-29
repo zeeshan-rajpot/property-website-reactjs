@@ -16,3 +16,9 @@
   .devider{
     width: 60%;
   }
+  .textflexserchsection{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }

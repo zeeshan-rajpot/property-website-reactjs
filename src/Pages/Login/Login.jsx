@@ -27,12 +27,12 @@ const Login = () => {
 
             <button
               href="#"
-              className="buy mr-2"
-              style={{ marginRight: "10px" }}
+              className="buy mr-2 shadow"
+              style={{ marginRight: "10px" , color:'black',  backgroundColor: "white" }}
             >
               Login
             </button>
-            <button href="#" className="rent ">
+            <button href="#" className="rent shadow" style={{backgroundColor: "#E1E1E1", borderColor:'#E1E1E1' , color:'#BABABA'}}>
               Sign Up
             </button>
             <br />

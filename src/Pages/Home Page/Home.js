@@ -10,6 +10,8 @@ import BuyPropertiesCard from "./BuyPropertiesCard";
 import AgentCrousel from "./AgentCrousel";
 import HomeSearchSection from "./HomeSearchSection";
 import Footer from "../../Common/Footer";
+
+
 const Home = () => {
   return (
     <>
@@ -27,6 +29,8 @@ const Home = () => {
       <AgentCrousel />
       <HomeSearchSection />
       <Footer />
+ 
+ 
     </>
   );
 };

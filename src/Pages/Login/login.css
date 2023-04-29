@@ -66,3 +66,6 @@ input:focus {
   border-radius: 0px 0px 100px 100px;
   margin-top: 0;
 }
+.Continuebtn:hover{
+  color: #ffffff;
+}

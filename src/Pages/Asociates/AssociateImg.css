@@ -1,0 +1,23 @@
+.Name {
+  background-color: transparent;
+  border-radius: 28px;
+  border: 1px solid #ec6337;
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 20px 100px 10px 10px;
+  width: auto;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .Associatecard {
+    align-items: center;
+    text-align: center;
+  }
+  .Name {
+    text-align: start;
+  }
+}

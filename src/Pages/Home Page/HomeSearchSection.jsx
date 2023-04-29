@@ -8,13 +8,13 @@ import Devider from "./Devider";
 const HomeSearchSection = () => {
   return (
     <>
-      <div className="bgimgchair" style={{  marginTop: "5vh" }}>
+      <div className="bgimgchair" style={{ height: "65vh", marginTop: "5vh" }}>
         <Container>
           <Row
             className={"Herosection margintop-mobile marginweb"}
             style={{ height: "40vh", marginTop: "10px", marginBottom: "20px" }}
           >
-            <Col lg={6} className="HerosectionCol section3text ps-5">
+            <Col lg={6} className="HerosectionCol section3text ps-5 textflexserchsection" style={{height: "65vh"}}>
               <h3 className="rem3">
                 Home
                 <span

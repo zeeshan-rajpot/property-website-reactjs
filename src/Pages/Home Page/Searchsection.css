@@ -1,6 +1,4 @@
-.rent{
-	padding: 8px 22px;
-}
+
 .flexsection{
     display: flex;
     align-items: center;
@@ -46,3 +44,13 @@ font-size: 15px;
 .dropdown-menu .dropdown-item {
 	font-size: 18px; /* Change to desired font size */
   }
+
+  @media only screen and (max-width: 600px){
+	.rentbuybtn{
+	border: none;
+	background-color: white;
+	}
+	.searchbtn{
+		border-radius: 20px;
+	}
+	}

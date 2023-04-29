@@ -10,6 +10,7 @@ import bedicon from "../../images/Component 24 – 1.svg";
 import locationicon from "../../images/office-address-icon.svg";
 import moneyicon from "../../images/finance-icon.svg";
 import foodicon from "../../images/breakfast-time-icon.svg";
+import Btnslection from "./Selectbtn";
 
 const SearchSection = () => {
   return (
@@ -21,16 +22,7 @@ const SearchSection = () => {
           className="col-full-height justify-content-center text-center flexsection rentbuybtn"
         >
           <div className="d-flex justify-content-center text-center ">
-            <button
-              href="#"
-              className="buy mr-3"
-              style={{ marginRight: "10px", padding: "8px 24px" }}
-            >
-              buy
-            </button>
-            <button href="#" className="rent " style={{ padding: "8px 22px" }}>
-              Rent
-            </button>
+           <Btnslection/>
           </div>
         </Col>
 

@@ -6,7 +6,7 @@ import "./Navbar.css";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import logoimg from '../../src/images/Mask Group 1.svg'
+import logoimg from "../../src/images/Mask Group 1.svg";
 
 import Offcanvas from "react-bootstrap/Offcanvas";
 
@@ -21,7 +21,9 @@ function Navbars() {
           style={{ backgroundColor: "white" }}
         >
           <Container bg="light" variant="light">
-            <Navbar.Brand href="#"><img src={logoimg}/></Navbar.Brand>
+            <Navbar.Brand href="#">
+              <img src={logoimg} />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -30,27 +32,33 @@ function Navbars() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                <NavLink to="/Home">
+                  <NavLink to="/Home">
                     <p className="nav-link">In Prop</p>
                   </NavLink>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 ">
-                <NavLink to="/">
-                    <span className="nav-link navpaddingright"><p> In Prop</p></span>
+                  <NavLink to="/">
+                    <span className="nav-link navpaddingright">
+                      <p> In Prop</p>
+                    </span>
                   </NavLink>
-                  <Nav.Link href="#action2" className="navpaddingright">
-                    {" "}
-                    <p>New Properties </p>
-                  </Nav.Link>
-                  <Nav.Link href="#action3" className="navpaddingright">
-                    <p>Home </p>
-                  </Nav.Link>
-                  <Nav.Link href="#action4" className="navpaddingright">
-                    {" "}
-                    <p>Link</p>
-                  </Nav.Link>
+                  <NavLink to="/PropertiesPage">
+                    <span className="nav-link navpaddingright">
+                      <p> Properties Page</p>
+                    </span>
+                  </NavLink>
+                  <NavLink to="/Acosites">
+                    <span className="nav-link navpaddingright">
+                      <p>Associate</p>
+                    </span>
+                  </NavLink>
+                  <NavLink to="/ProjectPage">
+                    <span className="nav-link navpaddingright">
+                      <p>ProjectPage</p>
+                    </span>
+                  </NavLink>
                   <Form className="d-flex">
                     <Form.Control
                       type="search"
@@ -60,8 +68,6 @@ function Navbars() {
                       size="300"
                     />
                   </Form>
-                 
-       
 
                   <NavLink to="/Login">
                     <span className="nav-link navpaddingright">
@@ -69,15 +75,11 @@ function Navbars() {
                     </span>
                   </NavLink>
 
-                 
                   <NavLink to="/Signup ">
-                    <span className="nav-link  navpaddingright"><p style={{textDecoration:'none'}}> Signup</p></span>
+                    <span className="nav-link  navpaddingright">
+                      <p style={{ textDecoration: "none" }}> Signup</p>
+                    </span>
                   </NavLink>
-
-                  <NavLink to="/DetailPage">
-                    <span className="nav-link navpaddingright"><p style={{textDecoration:'none'}}> DetailPage</p></span>
-                  </NavLink>
-                  
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

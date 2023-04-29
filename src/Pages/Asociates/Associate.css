@@ -1,0 +1,31 @@
+.AssociateHeroBg{
+    background-image: url('../../images/shutterstock_601067093.svg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+/* height: 60vh; */
+}
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    height: 60vh;
+    
+}
+.flexcenter p{
+    width: 40%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px){
+	.AssociateHeroBg{
+        background-image: url('../../images/bgimgaccosiate.svg') ;
+        background-size:cover ;
+        height: 80vh;
+
+    }
+    .flexcenter p{
+        width: 80%;
+    }
+}

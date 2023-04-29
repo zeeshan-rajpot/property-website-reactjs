@@ -9,7 +9,9 @@
   .navbar-nav .nav-link.active{
     color: #CCC462;
   }
- 
+  .nav-link{
+color: gray;
+  }
 
   .navpaddingright{
     margin-right: 3rem;

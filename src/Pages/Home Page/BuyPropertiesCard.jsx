@@ -27,7 +27,7 @@ const BuyPropertiesCard = () => {
             <p className="text-secondary" style={{fontSize:'2rem'}}>New properties for Buy</p>
           </Col>
         </Row>
-        <Carousel cols={5} rows={1} gap={10} loop>
+        <Carousel cols={4} rows={1} gap={10} loop>
           <Carousel.Item>
             <Cards
               path={firstimg}
