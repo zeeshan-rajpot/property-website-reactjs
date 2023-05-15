@@ -1,0 +1,10 @@
+@media (min-width: 576px) {
+    .modal-dialog{
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 80%;
+    }
+}
+.Continuebtn{
+    border: none;
+}

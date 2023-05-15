@@ -1,8 +1,15 @@
-.react-3d-carousel .slider-container .slider-right div{
- color: #EC6337;
- border: 1px solid #EC6337;
+.react-3d-carousel .slider-container .slider-right div {
+  color: #ec6337;
+  border: 1px solid #ec6337;
 }
-.react-3d-carousel .slider-container .slider-left div{
-    color: #EC6337;
-    border: 1px solid #EC6337;
-   }
+.react-3d-carousel .slider-container .slider-left div {
+  color: #ec6337;
+  border: 1px solid #ec6337;
+}
+
+@media only screen and (min-width: 767px) {
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+    height: 258px !important;
+    width: 100% !important;
+  }
+}

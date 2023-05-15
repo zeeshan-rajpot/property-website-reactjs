@@ -1,14 +1,20 @@
 .blurbackground {
   padding: 7px 9px 10px 80px;
   background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
+  /* border-radius: 40px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  /* border: 1px solid rgba(255, 255, 255, 0.3); */
   color: white;
   width: 100%;
   font-size: 1.7rem;
+  box-sizing: border-box;
+  max-height: 70%;
+  overflow: hidden;
+  position: relative;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-top: 85% ;
 }
 
 .displayflexmobile {
@@ -18,11 +24,12 @@
 }
 .blur {
   padding: 1px 9px 1px 10px;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(112, 105, 105, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  box-sizing: border-box;
 }
 .number {
   font-size: 2rem;
@@ -30,16 +37,27 @@
 .location {
   font-size: 1.3rem;
 }
+.boderradius {
+  border-radius: 40px;
+  
+  height: 253px;
+}
+
 @media only screen and (max-width: 600px) {
   .blurbackground {
     padding: 17px 0px 17px 80px;
     font-size: 2.1rem;
+    margin-top: 83%;
   }
   .location {
     padding-bottom: 10px;
   }
   .number {
     font-size: 3rem;
+  }
+  .boderradius {
+    width: 335px;
+    height: 335px;
   }
 }
 .bhRnqO {
@@ -53,6 +71,32 @@
 .card {
   border: none;
 }
-.boderradius {
-  border-radius: 16px;
+.houseorapt {
+	background-color:white;
+	border-radius:42px;
+	border:1px solid #FC780B;
+	display:inline-block;
+	cursor:pointer;
+	color:#FC780B;
+	
+	font-size:17px;
+	padding:4px 30px;
+	text-decoration:none;
 }
+
+@media only screen and (min-width: 1400px) {
+ 
+  .boderradius {
+    width: 100%;
+    height: 310px;
+  }
+  .blurbackground{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 91% ;
+  }
+  .houseorapt{
+    margin-left: 40%;
+  }
+}
+

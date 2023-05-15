@@ -19,11 +19,9 @@ const SearchSection = () => {
         <Col
           xs={12}
           md={2}
-          className="col-full-height justify-content-center text-center flexsection rentbuybtn"
+          className="col-full-height justify-content-center text-center flexsection rentbuybtn  rem2"
         >
-          <div className="d-flex justify-content-center text-center ">
-           <Btnslection/>
-          </div>
+          Buy
         </Col>
 
         <Col xs={12} md={8}>
@@ -54,7 +52,7 @@ const SearchSection = () => {
                   />
                 </Col>
                 <Col lg={3} sm={12} className="searchbarcolflex ">
-                  <img src={houseicon} alt="" srcset="" />
+                  <img src={houseicon} alt="" srcset=""  style={{ marginLeft: "33px" }} />
                   <Dropdownbtn
                     title="Property Type"
                     option1="option1"
@@ -64,7 +62,7 @@ const SearchSection = () => {
                   />
                 </Col>
                 <Col lg={3} sm={12} className="searchbarcolflex ">
-                  <img src={bedicon} alt="" srcset="" />
+                  <img src={bedicon} alt="" srcset=""  style={{ marginLeft: "33px" }} />
                   <Dropdownbtn
                     title="Beds & Baths"
                     option1="option1"
@@ -75,7 +73,7 @@ const SearchSection = () => {
                 </Col>
 
                 <Col lg={3} sm={12} className="searchbarcolflex ">
-                  <img src={moneyicon} alt="" srcset="" />
+                  <img src={moneyicon} alt="" srcset=""  style={{ marginLeft: "33px" }} />
                   <Dropdownbtn
                     title="Prize"
                     option1="option1"
@@ -94,11 +92,11 @@ const SearchSection = () => {
               style={{ marginTop: "10px" }}
             >
               <Row>
-                <Col
+              <Col
                   lg={3}
                   sm={12}
                   className="searchbarcolflex"
-                  style={{ paddingLeft: "30px" }}
+                  style={{ paddingLeft: "20px" }}
                 >
                   <img
                     src={searchimg}
@@ -118,7 +116,7 @@ const SearchSection = () => {
                   />
                 </Col>
                 <Col lg={3} sm={12} className="searchbarcolflex ">
-                  <img src={roomicon} alt="" srcset="" />
+                  <img src={roomicon} alt="" srcset=""  style={{ marginLeft: "33px" }} />
                   <Dropdownbtn
                     title="All Furnishing"
                     option1="option1"
@@ -127,8 +125,8 @@ const SearchSection = () => {
                     option4="option1"
                   />
                 </Col>
-                <Col lg={3} sm={12} className="searchbarcolflex ">
-                  <img src={locationicon} alt="" srcset="" />
+                <Col lg={3} sm={12} className="searchbarcolflex " >
+                  <img src={locationicon} alt="" srcset=""  style={{ marginLeft: "33px" }} />
                   <Dropdownbtn
                     title="Area (sqft)"
                     option1="option1"
@@ -138,7 +136,7 @@ const SearchSection = () => {
                   />
                 </Col>
                 <Col lg={3} sm={12} className="searchbarcolflex ">
-                  <img src={foodicon} alt="" srcset="" />
+                  <img src={foodicon} alt="" srcset=""   style={{ marginLeft: "33px" }}/>
                   <Dropdownbtn
                     title="Amenities"
                     option1="option1"

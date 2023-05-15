@@ -32,10 +32,7 @@ const SignupQ = () => {
 
           <div className="my-4 mx-1 rem2 d-flex">
             <img src={whole} alt="" />{" "}
-            <p className="rem2">
-              Are you open to considering properties in multiple locations, or
-              do you have a specific area in mind for your new property?
-            </p>
+            <p className="rem2">Funds available for investment?</p>
           </div>
           <div style={{ marginTop: "-3rem" }}>
             <img src={Line} alt="" style={{ marginLeft: "22px" }} />{" "}
@@ -45,13 +42,19 @@ const SignupQ = () => {
                 className="btn btn-success w-25 border-0 shadow-sm rem1"
                 style={{ borderRadius: "150px", backgroundColor: "#EC6337" }}
               >
-                Yes
+                0-£25,000
               </button>{" "}
               <button
                 className="btn btn-success w-25 bg-light text-dark border-light mx-3 shadow-sm rem1"
                 style={{ borderRadius: "150px" }}
               >
-                No
+                £25,000 - £40,000
+              </button>
+              <button
+                className="btn btn-success w-25 bg-light text-dark border-light mx-3 shadow-sm rem1"
+                style={{ borderRadius: "150px" }}
+              >
+                £40,000+
               </button>
             </span>
           </div>
@@ -59,7 +62,32 @@ const SignupQ = () => {
           <div className="my-4 mx-1 rem2 d-flex">
             <img src={Ellipse} alt="" />{" "}
             <p className="rem2" style={{ color: "#BABABA" }}>
-              Do you prefer a new construction property?{" "}
+            Are you looking for passive income Or to flip houses ?{" "}
+            </p>
+          </div>
+          <div style={{ marginTop: "-1rem" }}>
+            <img src={Lineli} alt="" style={{ marginLeft: "22px" }} />{" "}
+            <span style={{ marginLeft: "22px" }}>
+              {" "}
+              <button
+                className="btn btn-success w-25 border-0 shadow-sm rem1"
+                style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
+              >
+                passive income
+              </button>{" "}
+              <button
+                className="btn btn-success w-25 bg-light text-dark border-light mx-3 shadow-sm rem1"
+                style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
+              >
+                flip houses
+              </button>
+            </span>
+          </div>
+
+          <div className="my-4 mx-1 rem2 d-flex">
+            <img src={Ellipse} alt="" />{" "}
+            <p className="rem2" style={{ color: "#BABABA" }}>
+            Do you want us to provide you with long term tenants?{" "}
             </p>
           </div>
           <div style={{ marginTop: "-1rem" }}>
@@ -84,7 +112,7 @@ const SignupQ = () => {
           <div className="my-4 mx-1 rem2 d-flex">
             <img src={Ellipse} alt="" />{" "}
             <p className="rem2" style={{ color: "#BABABA" }}>
-              Is your budget flexible for the right property?{" "}
+            Do you already have a property portfolio?{" "}
             </p>
           </div>
           <div style={{ marginTop: "-1rem" }}>
@@ -109,7 +137,7 @@ const SignupQ = () => {
           <div className="my-4 mx-1 rem2 d-flex">
             <img src={Ellipse} alt="" />{" "}
             <p className="rem2" style={{ color: "#BABABA" }}>
-              Would you consider a property that requires some renovations?{" "}
+            Property experience?{" "}
             </p>
           </div>
           <div style={{ marginTop: "-1rem" }}>
@@ -120,39 +148,22 @@ const SignupQ = () => {
                 className="btn btn-success w-25 border-0 shadow-sm rem1"
                 style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
               >
-                Yes
-              </button>{" "}
-              <button
-                className="btn btn-success w-25 bg-light text-dark border-light mx-3 shadow-sm rem1"
-                style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
-              >
-                No
-              </button>
-            </span>
-          </div>
+              I don’t know much
 
-          <div className="my-4 mx-1 rem2 d-flex">
-            <img src={Ellipse} alt="" />{" "}
-            <p className="rem2" style={{ color: "#BABABA" }}>
-              Do you prioritize having access to amenities such as a gym, pool,
-              or clubhouse in your new property?{" "}
-            </p>
-          </div>
-          <div style={{ marginTop: "-1rem" }}>
-            <img src={Lineli} alt="" style={{ marginLeft: "22px" }} />{" "}
-            <span style={{ marginLeft: "22px" }}>
-              {" "}
-              <button
-                className="btn btn-success w-25 border-0 shadow-sm rem1"
-                style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
-              >
-                Yes
               </button>{" "}
               <button
                 className="btn btn-success w-25 bg-light text-dark border-light mx-3 shadow-sm rem1"
                 style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
               >
-                No
+              I know a little 
+
+              </button>
+              <button
+                className="btn btn-success w-25 bg-light text-dark border-light mx-3 shadow-sm rem1"
+                style={{ borderRadius: "150px", backgroundColor: "#E1E1E1" }}
+              >
+             I’m Experienced 
+
               </button>
             </span>
           </div>

@@ -23,7 +23,7 @@ import { SelectButton } from 'primereact/selectbutton';
 import './btnbasic.css'
 
 export default function Btnslection() {
-  const options = ['Buy', 'Rent'];
+  const options = ['Buy'];
   const [value, setValue] = useState(options[0]);
 
   return (

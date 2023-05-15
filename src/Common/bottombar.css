@@ -1,0 +1,13 @@
+@media only screen and (min-width: 767px) {
+  .bottombardesktop {
+    display: none;
+  }
+}
+.MuiSvgIcon-root {
+  font-size: 25px !important;
+}
+.MuiBottomNavigationAction-root.Mui-selected,
+.MuiBottomNavigationAction-label {
+  font-size: 11px;
+  color: black;
+}

@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Glory:wght@300;600;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/uber-move-text');
 
 .App {
   text-align: center;
-  font-family: 'Glory', sans-serif;
+  font-family: 'Uber Move Text', sans-serif;
 }
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Glory', sans-serif;
+  font-family: 'Uber Move Text', sans-serif;
   font-weight: 300;
+ 
 }
 
 p{
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
   font-weight: 300;
 }
@@ -53,4 +54,15 @@ html{
 .line{
   border: 1px solid gray;
   width: 60%;
+}
+body {
+  overflow-x: hidden; /* hide horizontal scrollbar */
+  overflow-y: auto; /* allow vertical scrollbar */
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    overflow-x: hidden !important;
+    margin-top: 50px;
+  }
 }

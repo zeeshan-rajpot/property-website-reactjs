@@ -8,7 +8,7 @@ const HeroSection = () => {
     <>
       <Container >
         <Row className={"Herosection"}>
-          <Col lg={6} className="HerosectionCol">
+          <Col lg={6} className="HerosectionCol" style={{marginTop:'55px'}}>
             <h1 className="h1" style={{color:'#FC780B'}}>Your Home  Finder </h1>
 
             <p style={{width:'90%', color:'#707070'}} >

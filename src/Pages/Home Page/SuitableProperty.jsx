@@ -6,6 +6,7 @@ import './Suitableproperty.css'
 const SuitableProperty = () => {
   return (
 <>
+<br /><br />
 <Container>
         <Row className={"Herosection margintop-mobile marginweb"} >
           <Col lg={6} className="HerosectionCol section3text">
@@ -30,9 +31,9 @@ const SuitableProperty = () => {
             <img
               src={houseimge}
               alt=""
-              className="HerosectionImg"
+              className="HerosectionImg prop"
               srcset=""
-              width={"480px"}
+              width={"410px"}
              
 
             />

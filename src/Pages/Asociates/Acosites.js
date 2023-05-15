@@ -8,12 +8,15 @@ import OurAssociateImg from './OurAssociateImg'
 import Associatefootertext from './Associatefootertext'
 import Navbars from '../../Common/NavBar'
 import Footer from '../../Common/Footer'
+import BottomBar from '../../Common/BottomNavBar'
+
 
 
 const Acosites = () => {
   return (
     <>
     <Navbars/>
+    <BottomBar/>
 <AssociateHero/>
 <OurAssociateImg/>
 {/* <PropCard/>

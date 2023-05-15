@@ -6,11 +6,13 @@ import NewProject from "../Project Page/NewProject";
 import ProjectCard from "../Project Page/ProjectCard";
 
 import houseimg from "../../images/jarek-ceborski-jn7uVeCdf6U-unsplash.png";
+import BottomBar from "../../Common/BottomNavBar";
 
 const ProjectPage = () => {
   return (
     <>
       <NavBar />
+      <BottomBar/>
       <ProjectHero />
      
       <NewProject />

@@ -5,11 +5,7 @@ import Carousel from "react-grid-carousel";
 // import Card from "react-bootstrap/Card";
 import Cards from "./Carouseltem";
 import { Container, Row, Col } from "react-bootstrap";
-import firstimg from "../../images/wael-hneini-QJKEa9n3yN8-unsplash.svg";
-import secontimg from "../../images/ahmed-aldaie-lVSrpZ-0B8o-unsplash.svg";
-import thirdimg from "../../images/darcey-beau-q8D7WZc40eA-unsplash (1).svg";
-import forthimg from "../../images/david-rodrigo-Fr6zexbmjmc-unsplash.svg";
-import fiveimg from "../../images/faisal-manga-4NeuZU-ynnw-unsplash.svg";
+
 // import
 
 const BuyPropertiesCard = () => {
@@ -27,222 +23,135 @@ const BuyPropertiesCard = () => {
             <p className="text-secondary" style={{fontSize:'2rem'}}>New properties for Buy</p>
           </Col>
         </Row>
-        <Carousel cols={4} rows={1} gap={10} loop>
+        <Carousel cols={3} rows={1} gap={10} loop>
           <Carousel.Item>
             <Cards
-              path={firstimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="House"
             />
           </Carousel.Item>
           <Carousel.Item>
             <Cards
-              path={secontimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={thirdimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="Apartments"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={forthimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1582120031356-35f21bf61055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="House"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={fiveimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1543579596-2c11997c7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="Apartments"
             />
           </Carousel.Item>
           <Carousel.Item>
             <Cards
-              path={firstimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="House"
             />
           </Carousel.Item>
           <Carousel.Item>
             <Cards
-              path={secontimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="Apartments"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={thirdimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1582120031356-35f21bf61055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="House"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={forthimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1543579596-2c11997c7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="Apartments"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={fiveimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="House"
             />
           </Carousel.Item>
           <Carousel.Item>
             <Cards
-              path={firstimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path={secontimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="Apartments"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={thirdimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1582120031356-35f21bf61055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="House"
             />
           </Carousel.Item>
 
           <Carousel.Item>
             <Cards
-              path={forthimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
+              path='https://images.unsplash.com/photo-1543579596-2c11997c7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80'
+              price="500$"
+              location="P.O Box 39975 , Dubai ,Emirates"
+              room="1"
+              bath="1"
+              houseorapt="Apartments"
             />
           </Carousel.Item>
 
-          <Carousel.Item>
-            <Cards
-              path={fiveimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path={firstimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path={secontimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={thirdimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={forthimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={fiveimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path={firstimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path={secontimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={thirdimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={forthimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path={fiveimg}
-              city="dubai"
-              location="dubai"
-              properties="173 no of properties"
-            />
-          </Carousel.Item>
 
           
         </Carousel>

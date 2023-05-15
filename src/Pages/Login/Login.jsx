@@ -9,11 +9,13 @@ import password from "../../images/Group 9504.png";
 import Facebookicon from "../../images/facebookicon.svg";
 import gmailicon from "../../images/gmailicon.svg";
 import Footer from "../../Common/Footer";
+import BottomBar from '../../Common/BottomNavBar'
 
 const Login = () => {
   return (
     <>
     <Navbars/>
+    <BottomBar/>
       <Container >
         <Row className="loginrow">
           <Col lg={4} className="text-center bgimg">

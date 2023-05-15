@@ -13,6 +13,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 function Navbars() {
   return (
     <>
+    <div className="NavbarMobile">
       {["lg"].map((expand) => (
         <Navbar
           key={expand}
@@ -85,7 +86,9 @@ function Navbars() {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
+        
       ))}
+      </div>
     </>
   );
 }

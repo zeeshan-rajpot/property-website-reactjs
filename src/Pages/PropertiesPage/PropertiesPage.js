@@ -8,10 +8,12 @@ import PropCard from "./PropCard";
 import PaginationContainer from "./PaginationContainer";
 import houseimg from "../../images/jarek-ceborski-jn7uVeCdf6U-unsplash.png";
 import AreaDownTown from "./AreaDownTown";
+import BottomBar from '../../Common/BottomNavBar'
 const PropertiesPage = () => {
   return (
     <>
       <Navbars />
+      <BottomBar/>
       <PropertiesHero />
       <SearchBarProperties />
       <Propertiesimg />

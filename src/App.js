@@ -8,6 +8,8 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 //core
 import "primereact/resources/primereact.min.css";                                       
         
+
+import { BrowserRouter, Routes ,Route } from "react-router-dom";
 import Home from './Pages/Home Page/Home';
 import Login from '../src/Pages/Login/Login';
 import Signup from './Pages/Sign up/Signup';
@@ -16,7 +18,7 @@ import PropertiesPage from './Pages/PropertiesPage/PropertiesPage';
 import Acosites from './Pages/Asociates/Acosites.js';
 import SignupQ from './Pages/Sign up/SignupQ';
 import ProjectPage from './Pages/Project Page/ProjectPage';
-import { BrowserRouter, Routes ,Route } from "react-router-dom";
+import Modals from '../src/Pages/Sign up/Modals';
 function App() {
   return (
     <>
@@ -37,6 +39,7 @@ function App() {
 
       <Route path='/Acosites' element={   <Acosites/>} />
       <Route path='/ProjectPage' element={   <ProjectPage/>} />
+      <Route path='/Modals' element={   <Modals/>} />
       
     </Routes>
     </BrowserRouter>

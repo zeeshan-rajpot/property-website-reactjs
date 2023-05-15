@@ -40,3 +40,10 @@ color: gray;
   .form-control:focus {
     outline: none;
   }
+
+  @media only screen and (max-width: 767px) {
+    .NavbarMobile {
+      margin-top: 70px;
+      display: none;
+    }
+  }

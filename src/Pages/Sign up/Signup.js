@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import "./login.css";
-import Dropdownbtn from "../../Pages/Home Page/Dropdownbtn";
-import { Link } from "react-router-dom";
+import SignupQ from "./SignupQ";
 
+
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 import loginimg from "../../images/shutterstock_1935754699 [Converted].png";
 import logo from "../../images/Image 11.png";
 import email from "../../images/Path 9028.png";
@@ -12,13 +14,18 @@ import nameicon from "../../images/noun-profile-5657081.svg";
 import cityicon from "../../images/noun-city-3922352.svg";
 import Footer from "../../Common/Footer";
 import Navbars from "../../Common/NavBar";
-import SignupQ from "./SignupQ";
-import Signupdropdownbtn from "./Signupdropdownbtn";
 
-const Signup = () => {
+import Signupdropdownbtn from "./Signupdropdownbtn";
+import './Modals.css'
+import BottomBar from '../../Common/BottomNavBar'
+
+function Signup() {
+  const [show, setShow] = useState(false);
+
   return (
     <>
       <Navbars />
+      <BottomBar/>
       <Container>
         <Row className="loginrow">
           <Col lg={4} className="text-center bgimg">
@@ -33,11 +40,20 @@ const Signup = () => {
             <button
               href="#"
               className="buy mr-2 shadow"
-              style={{ marginRight: "10px" ,backgroundColor: "#E1E1E1", borderColor:'#E1E1E1' , color:'#BABABA'}}
+              style={{
+                marginRight: "10px",
+                backgroundColor: "#E1E1E1",
+                borderColor: "#E1E1E1",
+                color: "#BABABA",
+              }}
             >
               Login
             </button>
-            <button href="#" className="rent shadow" style={{ color:'black',  backgroundColor: "white" }} >
+            <button
+              href="#"
+              className="rent shadow"
+              style={{ color: "black", backgroundColor: "white" }}
+            >
               Sign Up
             </button>
             <br />
@@ -76,7 +92,7 @@ const Signup = () => {
               className="ms-2"
               style={{ width: "280px" }}
             />
-            <br /> 
+            <br />
             <br />
             <div
               className="d-flex"
@@ -87,9 +103,22 @@ const Signup = () => {
             </div>
             <br />
             <br />
-            <Link to="/SignupQ" className="Continuebtn">
-              Continue
-            </Link>
+      
+            <button variant="primary" onClick={() => setShow(true)} className="Continuebtn">
+        Continue
+      </button>
+
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+       
+        <Modal.Body>
+          <SignupQ/>
+        </Modal.Body>
+      </Modal>
             <br />
             <p className="rem1">or</p>
             <br />
@@ -106,6 +135,6 @@ const Signup = () => {
       <Footer />
     </>
   );
-};
+}
 
 export default Signup;

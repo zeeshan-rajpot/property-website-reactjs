@@ -24,12 +24,12 @@ const Section3Home = () => {
               <img src={houseimg} />
             </Col>
             <Col lg={6} className="HerosectionCol  ">
-              <p className="text-secondary  p">
+              <p className="text-secondary  " style={{fontSize:'18px'}}>
                 Text fill up..... have ratings on our platform. A ‘Book It
                 Again’ percentage score tells you how a event has performed in
                 the past. Over 10,000 venues have ratings on our platform.
               </p>
-              <p className="text-secondary p">
+              <p className="text-secondary " style={{fontSize:'18px'}}>
                 A ‘Book It Again’ percentage score tells you how a venue has
                 performed in the past.
               </p>

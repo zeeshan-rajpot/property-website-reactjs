@@ -30,7 +30,12 @@
   }
 
   .section3text {
-    height: 50vh;
+    height: auto;
   }
+
+.prop{
+  width: 300px;
+}
+
 
 }

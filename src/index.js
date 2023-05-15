@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import '../node_modules/font-awesome/css/font-awesome.min.css'
+import '@mui/material/styles';
+// import '@mui/material/Modal/Modal.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
