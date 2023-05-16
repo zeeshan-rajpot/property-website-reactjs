@@ -22,7 +22,7 @@ function Navbars() {
           style={{ backgroundColor: "white" }}
         >
           <Container bg="light" variant="light">
-            <Navbar.Brand href="#">
+            <Navbar.Brand as={Link} to="/">
               <img src={logoimg} />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -40,11 +40,11 @@ function Navbars() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 ">
-                  <NavLink to="/">
+                  {/* <NavLink to="/">
                     <span className="nav-link navpaddingright">
                       <p> In Prop</p>
                     </span>
-                  </NavLink>
+                  </NavLink> */}
                   <NavLink to="/PropertiesPage">
                     <span className="nav-link navpaddingright">
                       <p> Properties Page</p>
