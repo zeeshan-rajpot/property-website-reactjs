@@ -14,7 +14,7 @@ const SearchBarProperties = () => {
       <Container className="SearchBarProperties shadow " style={{paddingLeft:'30px'}}> 
         <Row>
           <Col lg={2} sm={6} className="searchbarcolflex d-flex">
-            <img src={searchimg} alt="" srcset=""  style={{ marginLeft: "0" }}  />
+            <img className="searchicon" src={searchimg} alt="" srcset=""  style={{ marginLeft: "0" }}  />
             <input
               type="text"
               placeholder="City, Community or Building"
@@ -28,7 +28,7 @@ const SearchBarProperties = () => {
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
             {" "}
-            <img src={houseicon} alt="" srcset=""  style={{ marginLeft: "0" }}  />
+            <img className="searchicon"  src={houseicon} alt="" srcset=""  style={{ marginLeft: "0" }}  />
             <Dropdownbtn
               title="Property Type"
               option1="option1"
@@ -38,7 +38,7 @@ const SearchBarProperties = () => {
             />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img src={bedicon} alt="" srcset=""  style={{ marginLeft: "15px" }}  />
+          <img className="searchicon" src={bedicon} alt="" srcset=""  style={{ marginLeft: "15px" }}  />
                   <Dropdownbtn
                     title="Beds & Baths"
                     option1="option1"
@@ -48,7 +48,7 @@ const SearchBarProperties = () => {
                   />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img src={moneyicon} alt="" srcset=""   style={{ marginLeft: "0" }}  />
+          <img  className="searchicon" src={moneyicon} alt="" srcset=""   style={{ marginLeft: "0" }}  />
                   <Dropdownbtn
                     title="Prize"
                     option1="option1"
@@ -58,7 +58,7 @@ const SearchBarProperties = () => {
                   />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img src={fillter} alt="" srcset=""   style={{ marginLeft: "0" }} />
+          <img  className="searchicon" src={fillter} alt="" srcset=""   style={{ marginLeft: "0" }} />
                   <Dropdownbtn
                     title="Fillter"
                     option1="option1"

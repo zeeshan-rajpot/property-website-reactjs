@@ -37,7 +37,7 @@ function Navbars() {
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                     <NavLink to="/Home">
-                      <p className="nav-link">In Prop</p>
+                      <p className="nav-link" style={{fontSize:'18px'}}>In Prop</p>
                     </NavLink>
                   </Offcanvas.Title>
                 </Offcanvas.Header>
@@ -50,17 +50,17 @@ function Navbars() {
                   </NavLink> */}
                     <NavLink to="/PropertiesPage">
                       <span className="nav-link navpaddingright">
-                        <p> Properties Page</p>
+                        <p style={{fontSize:'18px'}}> Properties Page</p>
                       </span>
                     </NavLink>
                     <NavLink to="/Acosites">
                       <span className="nav-link navpaddingright">
-                        <p>Associate</p>
+                        <p style={{fontSize:'18px'}}>Associate</p>
                       </span>
                     </NavLink>
                     <NavLink to="/ProjectPage">
                       <span className="nav-link navpaddingright">
-                        <p>ProjectPage</p>
+                        <p style={{fontSize:'18px'}}>ProjectPage</p>
                       </span>
                     </NavLink>
                     <Form className="d-flex">
@@ -75,7 +75,7 @@ function Navbars() {
 
                     <NavLink to="/Login">
                       <span className="nav-link navpaddingright">
-                        <p> Sign In /Signup</p>
+                        <p style={{fontSize:'18px'}}> Sign In /Signup</p>
                       </span>
                     </NavLink>
 

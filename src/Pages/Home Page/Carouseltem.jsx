@@ -24,7 +24,7 @@ const Cards = (props) => {
                   <span className="h1" style={{ fontSize: "20px" }}>
                    {props.price}
                   </span>
-                  <button href="#" class="houseorapt"style={{marginLeft:'50%'}}>{props.houseorapt}</button>
+                  <button href="#" class="houseorapt"style={{marginLeft:'45%'}}>{props.houseorapt}</button>
                   </div>
                 </Card.Title>
                 <Card.Text>{props.location}</Card.Text>

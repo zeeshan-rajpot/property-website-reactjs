@@ -21,6 +21,8 @@
   height: 42px;
  
 }
+
+
 .css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input{
   min-width: 65px !important;
 }
@@ -47,6 +49,9 @@
   .marginmobile{
     margin-left: 90px !important;
     
+  }
+  .css-6yt8uy.css-6yt8uy.css-6yt8uy{
+    min-width: 200px !important;
   }
   .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
 	min-width: 200px !important;
