@@ -157,7 +157,7 @@ const SearchSection = () => {
         <Col
           xs={12}
           md={2}
-          className="col-full-height justify-content-center text-center  rem2  "
+          className="col-full-height justify-content-center text-center  rem2 searchbtn"
         >
           Search
         </Col>

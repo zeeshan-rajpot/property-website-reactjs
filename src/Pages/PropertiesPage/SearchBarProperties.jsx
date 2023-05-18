@@ -14,7 +14,7 @@ const SearchBarProperties = () => {
       <Container className="SearchBarProperties shadow " style={{paddingLeft:'30px'}}> 
         <Row>
           <Col lg={2} sm={6} className="searchbarcolflex d-flex">
-            <img src={searchimg} alt="" srcset="" />
+            <img src={searchimg} alt="" srcset=""  style={{ marginLeft: "0" }}  />
             <input
               type="text"
               placeholder="City, Community or Building"
@@ -28,7 +28,7 @@ const SearchBarProperties = () => {
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
             {" "}
-            <img src={houseicon} alt="" srcset="" />
+            <img src={houseicon} alt="" srcset=""  style={{ marginLeft: "0" }}  />
             <Dropdownbtn
               title="Property Type"
               option1="option1"
@@ -38,7 +38,7 @@ const SearchBarProperties = () => {
             />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img src={bedicon} alt="" srcset="" />
+          <img src={bedicon} alt="" srcset=""  style={{ marginLeft: "15px" }}  />
                   <Dropdownbtn
                     title="Beds & Baths"
                     option1="option1"
@@ -48,7 +48,7 @@ const SearchBarProperties = () => {
                   />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img src={moneyicon} alt="" srcset="" />
+          <img src={moneyicon} alt="" srcset=""   style={{ marginLeft: "0" }}  />
                   <Dropdownbtn
                     title="Prize"
                     option1="option1"
@@ -58,7 +58,7 @@ const SearchBarProperties = () => {
                   />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img src={fillter} alt="" srcset="" />
+          <img src={fillter} alt="" srcset=""   style={{ marginLeft: "0" }} />
                   <Dropdownbtn
                     title="Fillter"
                     option1="option1"
@@ -67,7 +67,7 @@ const SearchBarProperties = () => {
                     option4="option1"
                   />
           </Col>
-          <Col lg={2} md={6} className="searchbarcolflex ">
+          <Col lg={2} md={6} className="searchbarcolflex text-center" style={{justifyContent:'center'}}>
           <button href="#" class="Find">Find</button>
           </Col>
         </Row>

@@ -1,25 +1,70 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link, useNavigate } from "react-router-dom";
 import "./login.css";
 import Navbars from "../../Common/NavBar";
 import loginimg from "../../images/shutterstock_1935754699 [Converted].png";
 import logo from "../../images/Image 11.png";
-import email from "../../images/Path 9028.png";
-import password from "../../images/Group 9504.png";
-import Facebookicon from "../../images/facebookicon.svg";
-import gmailicon from "../../images/gmailicon.svg";
+import emailIcon from "../../images/Path 9028.png";
+import passwordIcon from "../../images/Group 9504.png";
+import FacebookIcon from "../../images/facebookicon.svg";
+import GmailIcon from "../../images/gmailicon.svg";
 import Footer from "../../Common/Footer";
-import BottomBar from '../../Common/BottomNavBar'
+import BottomBar from "../../Common/BottomNavBar";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Create a payload object with user credentials
+    const payload = {
+      email,
+      password,
+    };
+
+    // Send the login request to the API
+    axios.post("https://dolphin-app-ldyyx.ondigitalocean.app/login", payload)
+      .then((response) => {
+        if (response.status === 200) {
+          // Redirect to the home page
+          navigate("/home");
+          // Display the congratulatory message with an emoji
+          alert("Congratulations! User is logged in now. 🎉");
+        } else {
+          // Handle the case when login is unsuccessful
+          // Display an error message or take appropriate action
+          alert("Login unsuccessful. Please check your credentials and try again.");
+        }
+      })
+      .catch((error) => {
+        // Handle any errors that occur during the login request
+        console.log("Error:", error);
+        // Display an error message or take appropriate action
+        alert("An error occurred. Please try again later.");
+      });
+  };
+
   return (
     <>
-    <Navbars/>
-    <BottomBar/>
-      <Container >
+      <Navbars />
+      <BottomBar />
+      <Container>
         <Row className="loginrow">
           <Col lg={4} className="text-center bgimg">
-            <img src={logo} alt="" srcset="" />
+            <img src={logo} alt="" />
             <h3>
               <b> Welcome Back</b>
             </h3>
@@ -27,43 +72,39 @@ const Login = () => {
               Welcome Back, Please enter Your Details
             </p>
 
-            <button
-              href="#"
-              className="buy mr-2 shadow"
-              style={{ marginRight: "10px" , color:'black',  backgroundColor: "white" }}
-            >
+            <Link to="/Login" className="buy mr-2 shadow" style={{ marginRight: "10px", color: "black", backgroundColor: "white" }}>
               Login
-            </button>
-            <button href="#" className="rent shadow" style={{backgroundColor: "#E1E1E1", borderColor:'#E1E1E1' , color:'#BABABA'}}>
+            </Link>
+            <Link to="/Signup" className="rent shadow" style={{ backgroundColor: "#E1E1E1", borderColor: "#E1E1E1", color: "#BABABA" }}>
               Sign Up
-            </button>
+            </Link>
             <br />
             <br />
-            <img src={email} alt="" srcset="" />
-            <input type="text" placeholder="Email" className="ms-2" />
+            <img src={emailIcon} alt="" />
+            <input type="text" placeholder="Email" className="ms-2" value={email} onChange={handleEmailChange} />
             <br />
             <br />
-            <img src={password} alt="" srcset="" />
-            <input type="Password" placeholder="Password" className="ms-2" />
+            <img src={passwordIcon} alt="" />
+            <input type="password" placeholder="Password" className="ms-2" value={password} onChange={handlePasswordChange} />
             <br />
             <br />
-            <buttun href="#" class="Continuebtn">
+            <button href="#" className="Continuebtn" onClick={handleSubmit}>
               Continue
-            </buttun>
+            </button>
             <br />
             <br />
             <p className="text-secondary">Or Continue with</p>
-            <img src={Facebookicon} alt="" srcset="" width={"100px"} />
-            <img src={gmailicon} alt="" srcset="" width={"100px"} />
-           
-            
+            <img src={FacebookIcon} alt="" width={"100px"} />
+            <img src={GmailIcon} alt="" width={"100px"} />
+
+
             <p className="text-secondary">
               Dummy text fill up have ratings on our platform. A ‘Book It Again’
-              percentage score tells you how a event has performed
+              percentage score tells you how an event has performed
             </p>
           </Col>
-          <Col lg={8} className=" d-flex itemcenter">
-            <img src={loginimg} alt="" srcset="" className="loginimg " />
+          <Col lg={8} className="d-flex itemcenter">
+            <img src={loginimg} alt="" className="loginimg" />
           </Col>
         </Row>
       </Container>

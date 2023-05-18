@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import "./login.css";
 import SignupQ from "./SignupQ";
+import { Link } from "react-router-dom";
 
 
-import Button from "react-bootstrap/Button";
+
 import Modal from "react-bootstrap/Modal";
 import loginimg from "../../images/shutterstock_1935754699 [Converted].png";
 import logo from "../../images/Image 11.png";
@@ -25,7 +26,7 @@ function Signup() {
   return (
     <>
       <Navbars />
-      <BottomBar/>
+      <BottomBar />
       <Container>
         <Row className="loginrow">
           <Col lg={4} className="text-center bgimg">
@@ -37,25 +38,20 @@ function Signup() {
               Welcome Back, Please enter Your Details
             </p>
 
-            <button
-              href="#"
-              className="buy mr-2 shadow"
+
+            <Link to="/Login" className="buy mr-2 shadow"
               style={{
                 marginRight: "10px",
                 backgroundColor: "#E1E1E1",
                 borderColor: "#E1E1E1",
                 color: "#BABABA",
-              }}
-            >
+              }}>
               Login
-            </button>
-            <button
-              href="#"
-              className="rent shadow"
-              style={{ color: "black", backgroundColor: "white" }}
-            >
+            </Link>
+            <Link to="/Signup" className="rent shadow"
+              style={{ color: "black", backgroundColor: "white" }}>
               Sign Up
-            </button>
+            </Link>
             <br />
             <br />
             <img src={nameicon} alt="" srcset="" />
@@ -103,22 +99,22 @@ function Signup() {
             </div>
             <br />
             <br />
-      
-            <button variant="primary" onClick={() => setShow(true)} className="Continuebtn">
-        Continue
-      </button>
 
-      <Modal
-        show={show}
-        onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
-        aria-labelledby="example-custom-modal-styling-title"
-      >
-       
-        <Modal.Body>
-          <SignupQ/>
-        </Modal.Body>
-      </Modal>
+            <button variant="primary" onClick={() => setShow(true)} className="Continuebtn">
+              Continue
+            </button>
+
+            <Modal
+              show={show}
+              onHide={() => setShow(false)}
+              dialogClassName="modal-90w"
+              aria-labelledby="example-custom-modal-styling-title"
+            >
+
+              <Modal.Body>
+                <SignupQ />
+              </Modal.Body>
+            </Modal>
             <br />
             <p className="rem1">or</p>
             <br />
