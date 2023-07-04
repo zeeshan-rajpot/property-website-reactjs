@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import "./login.css";
-import SignupQ from "./SignupQ";
+// import SignupQ from "./SignupQ";
+import { SignUpOption } from "./SignUpOption";
 import { Link } from "react-router-dom";
 
 
@@ -109,10 +110,12 @@ function Signup() {
               onHide={() => setShow(false)}
               dialogClassName="modal-90w"
               aria-labelledby="example-custom-modal-styling-title"
+              className="centered-modal"
             >
 
               <Modal.Body>
-                <SignupQ />
+                {/* <SignupQ /> */}
+                <SignUpOption/>
               </Modal.Body>
             </Modal>
             <br />

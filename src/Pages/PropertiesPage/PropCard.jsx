@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./propcard.css";
-
+import { Link } from "react-router-dom";
 import bedicon from "../../images/bedicon.svg";
 import broom from "../../images/broom.svg";
 import broom2 from "../../images/broom.svg";
@@ -12,11 +12,10 @@ import phone from "../../images/phone.svg";
 import Whatsapp from "../../images/Component 26 – 1.svg";
 import vdots from "../../images/vdot.svg";
 // import dot from "../../images/dot.svg";
-import ractangle from "../../images/rectangle.svg";
+// import ractangle from "../../images/rectangle.svg";
 import New from "../../images/Component 26 – 1.png";
 // import HeartBtn from "./RadioBtn.jsx";
-import hearticnbg from "../../images/Component 29 – 3.svg";
-import { Link } from "react-router-dom";
+
 
 const PropCard = (props) => {
   return (
@@ -43,9 +42,16 @@ const PropCard = (props) => {
               >
                 <HeartBtn />
               </div> */}
-              <Link to='/DetailPage'>
-              <img className="w-100" height={"350px"} src={props.image} alt="" />
+              
+              <Link to={`/DetailPage/${props.id}`}>
+                <img
+                  className="w-100"
+                  height={"350px"}
+                  src={props.image}
+                  alt=""
+                />
               </Link>
+             
             </div>
 
             <div
@@ -114,7 +120,7 @@ const PropCard = (props) => {
                 <div>
                   <img src={bedicon} alt="" />{" "}
                   <span className="mx-2 rem2" style={{ color: "#BABABA" }}>
-                    {props.bedroom}
+                    {props.bedroom} bedroom
                   </span>{" "}
                 </div>
               </Col>
@@ -122,7 +128,7 @@ const PropCard = (props) => {
                 <div>
                   <img src={broom} alt="" />{" "}
                   <span className="mx-2 rem2" style={{ color: "#BABABA" }}>
-                {props.bathroom}
+                {props.bathroom} bathroom
                   </span>{" "}
                 </div>
               </Col>
@@ -130,7 +136,7 @@ const PropCard = (props) => {
                 <div>
                   <img src={broom2} alt="" />{" "}
                   <span className="mx-2 rem2" style={{ color: "#BABABA" }}>
-                   {props.area}
+                   {props.area} sqft
                   </span>{" "}
                 </div>
               </Col>

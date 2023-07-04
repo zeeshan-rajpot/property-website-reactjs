@@ -16,7 +16,7 @@ const ProjectPage = () => {
   useEffect(() => {
     fetchProjects();
   }, []);
-
+ 
   const fetchProjects = async () => {
     try {
       const response = await axios.get(`${baseurl}getAllProject`);

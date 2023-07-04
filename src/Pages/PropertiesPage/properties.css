@@ -1,0 +1,15 @@
+.mobile-properties {
+  display: none; /* Hide by default */
+text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-properties {
+    display: none; /* Hide on mobile view */
+  }
+
+  .mobile-properties {
+    display: block; /* Show on mobile view */
+    /* Add other mobile styling properties */
+  }
+}

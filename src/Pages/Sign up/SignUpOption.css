@@ -1,0 +1,33 @@
+.Source {
+    background-color: #ffffff;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ec6437;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 12px 63px;
+    text-decoration: none;
+    width: 50%;
+    border: none;
+    margin-left: 24%;
+
+  }
+  .Invest {
+	background-color:#ec6437;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 69px;
+	text-decoration:none !important;
+    width: 50%;
+    border: none;
+    margin-left: 24%;
+
+}
+a{
+  text-decoration: none;
+}

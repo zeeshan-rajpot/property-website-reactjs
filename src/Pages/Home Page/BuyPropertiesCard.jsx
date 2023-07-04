@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useEffect, useState } from "react";
 
 import Carousel from "react-grid-carousel";
 
@@ -9,6 +9,18 @@ import { Container, Row, Col } from "react-bootstrap";
 // import
 
 const BuyPropertiesCard = () => {
+  const [properties, setProperties] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8222/getAllProperty')
+      .then(response => response.json())
+      .then(data => {
+        setProperties(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
   return (
     <>
       <Container>
@@ -24,136 +36,18 @@ const BuyPropertiesCard = () => {
           </Col>
         </Row>
         <Carousel cols={3} rows={1} gap={10} loop>
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="House"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="Apartments"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1582120031356-35f21bf61055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="House"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1543579596-2c11997c7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="Apartments"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="House"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="Apartments"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1582120031356-35f21bf61055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="House"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1543579596-2c11997c7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="Apartments"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="House"
-            />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1582672060674-bc2bd808a8b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="Apartments"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1582120031356-35f21bf61055?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="House"
-            />
-          </Carousel.Item>
-
-          <Carousel.Item>
-            <Cards
-              path='https://images.unsplash.com/photo-1543579596-2c11997c7706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80'
-              price="500$"
-              location="P.O Box 39975 , Dubai ,Emirates"
-              room="1"
-              bath="1"
-              houseorapt="Apartments"
-            />
-          </Carousel.Item>
-
-
-          
+          {properties.map(property => (
+            <Carousel.Item key={property.id}>
+              <Cards
+                path={property.propertyImages[0]}
+                price={property.price}
+                location={property.address}
+                room={property.bedroom}
+                bath={property.bathroom}
+                houseorapt={property.category}
+              />
+            </Carousel.Item>
+          ))}
         </Carousel>
       </Container>
     </>
@@ -161,3 +55,58 @@ const BuyPropertiesCard = () => {
 };
 
 export default BuyPropertiesCard;
+
+
+
+// import React, { useEffect, useState } from "react";
+// import Carousel from "react-grid-carousel";
+// import Cards from "./CarouselItem";
+// import { Container, Row, Col } from "react-bootstrap";
+
+// const BuyPropertiesCard = () => {
+//   const [properties, setProperties] = useState([]);
+
+//   useEffect(() => {
+//     fetch('https://example.com/api/properties')
+//       .then(response => response.json())
+//       .then(data => {
+//         setProperties(data);
+//       })
+//       .catch(error => {
+//         console.error('Error fetching data:', error);
+//       });
+//   }, []);
+
+//   return (
+//     <>
+//       <Container>
+//         <Row>
+//           <Col>
+//             <h2 style={{ fontSize: '2rem', color: "#FC780B", fontWeight: '600' }}>New Everyday</h2>
+//           </Col>
+//         </Row>
+//         <Row>
+//           <Col>
+//             <p className="text-secondary" style={{ fontSize: '2rem' }}>New properties for Buy</p>
+//           </Col>
+//         </Row>
+//         <Carousel cols={3} rows={1} gap={10} loop>
+//           {properties.map(property => (
+//             <Carousel.Item key={property.id}>
+//               <Cards
+//                 path={property.image}
+//                 price={property.price}
+//                 location={property.location}
+//                 room={property.room}
+//                 bath={property.bath}
+//                 houseorapt={property.houseorapt}
+//               />
+//             </Carousel.Item>
+//           ))}
+//         </Carousel>
+//       </Container>
+//     </>
+//   );
+// };
+
+// export default BuyPropertiesCard;

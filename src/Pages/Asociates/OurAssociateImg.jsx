@@ -33,7 +33,7 @@ const OurAssociateImg = () => {
           <Row>
             {associates.map((associate, index) => (
               <Col lg={4} className="Associatecard" key={index}>
-                <img src={associate.profilePicture} alt="" style={{width:"200px" , height:"200px"}} />
+                <img src={associate.profilePicture} alt="" style={{width:"200px" , height:"200px" , borderRadius:"100%"}} />
                 <AssociateImgCard
                   name={associate.name}
                   designation={associate.companyName}
