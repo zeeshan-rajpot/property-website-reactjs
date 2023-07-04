@@ -7,7 +7,7 @@ import Section3Home from "./Section3Home";
 // import Rentproperties from "./Rentproperties-card";
 // import Devider from "./Devider";
 import BuyPropertiesCard from "./BuyPropertiesCard";
-import AgentCrousel from "./AgentCrousel";
+// import AgentCrousel from "./AgentCrousel";
 import HomeSearchSection from "./HomeSearchSection";
 import Footer from "../../Common/Footer";
 import BottomBar from "../../Common/BottomNavBar";
@@ -27,7 +27,7 @@ const Home = () => {
       {/* <Rentproperties /> */}
 
       <BuyPropertiesCard />
-      <AgentCrousel />
+      {/* <AgentCrousel /> */}
       <HomeSearchSection />
       <Footer />
     </>

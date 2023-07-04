@@ -19,6 +19,7 @@ import Acosites from './Pages/Asociates/Acosites.js';
 import SignupQ from './Pages/Sign up/SignupQ';
 import ProjectPage from './Pages/Project Page/ProjectPage';
 import Modals from '../src/Pages/Sign up/Modals';
+import Test from './Pages/ApiTest/ApiTest';
 function App() {
   return (
     <>
@@ -40,7 +41,7 @@ function App() {
       <Route path='/Acosites' element={   <Acosites/>} />
       <Route path='/ProjectPage' element={   <ProjectPage/>} />
       <Route path='/Modals' element={   <Modals/>} />
-      
+      <Route path='/Test' element={   <Test/>} />
     </Routes>
     </BrowserRouter>
     </>

@@ -22,7 +22,7 @@ const AssociateImgCard = (props) => {
           </p>
           <hr />
           <p>
-            For Sale <span style={{ color: "#EC6337" }}>{props.age}</span>
+            For Sale :<span style={{ color: "#EC6337" }}>  {props.numberofproperties}</span>
           </p>
         </span>
       </Col>

@@ -14,7 +14,7 @@ import vdots from "../../images/vdot.svg";
 // import dot from "../../images/dot.svg";
 import ractangle from "../../images/rectangle.svg";
 import New from "../../images/Component 26 – 1.png";
-import HeartBtn from "./RadioBtn.jsx";
+// import HeartBtn from "./RadioBtn.jsx";
 import hearticnbg from "../../images/Component 29 – 3.svg";
 import { Link } from "react-router-dom";
 
@@ -34,7 +34,7 @@ const PropCard = (props) => {
               >
                 <img src={New} alt="" />
               </div>
-              <div
+              {/* <div
                 className="heartbtn"
                 style={{
                   position: "absolute",
@@ -42,7 +42,7 @@ const PropCard = (props) => {
                 }}
               >
                 <HeartBtn />
-              </div>
+              </div> */}
               <Link to='/DetailPage'>
               <img className="w-100" height={"350px"} src={props.image} alt="" />
               </Link>

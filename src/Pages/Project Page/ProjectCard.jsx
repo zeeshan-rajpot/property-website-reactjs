@@ -23,19 +23,19 @@ const ProjectCard = (props) => {
             <div>
               <img src={bedicon} alt="" />{' '}
               <span className=" rem2 mx-2" style={{ color: '#BABABA' }}>
-                {props.bedroom}
+                {props.bedroom}  bedroom
               </span>{' '}
             </div>
             <div>
               <img src={broom} alt="" />{' '}
               <span className="rem2 mx-2" style={{ color: '#BABABA' }}>
-                {props.bathroom}
+                {props.bathroom}  bathroom
               </span>{' '}
             </div>
             <div>
               <img src={broom2} alt="" />{' '}
               <span className="rem2 mx-2" style={{ color: '#BABABA' }}>
-                {props.area}
+                {props.area}  sqft
               </span>{' '}
             </div>
             <div>
