@@ -13,6 +13,8 @@ const AssociateHero = () => {
               Text fill up rooms perfect for laid-back meet-ups to corporate
               boardrooms made for wowing potential clients. We’ve got your
               meeting room hire needs covered
+
+              
             </p>
           </Col>
         </Row>

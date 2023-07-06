@@ -18,7 +18,7 @@ export const SignUpOption = () => {
         <h1 className='display-6 mt-4'>Are You Looking Too?</h1>  
         </Row>
         <Row>
-        <Link  to ='/Investor'class="Source display-6 mt-4 shadow text-decoration-none">Source</Link>
+        <Link  to ='/Sourcer'class="Source display-6 mt-4 shadow text-decoration-none">Source</Link>
         <Link to ='/Investor' class="Invest display-6 mt-4 mb-5 shadow text-decoration-none">Invest</Link>
         </Row>
    </Container>

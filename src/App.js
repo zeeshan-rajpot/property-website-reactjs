@@ -7,7 +7,7 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
     
 //core
 import "primereact/resources/primereact.min.css";                                       
-        
+import Sourcer from './Pages/Sign up/Sourcer';
 
 import { BrowserRouter, Routes ,Route } from "react-router-dom";
 import Home from './Pages/Home Page/Home';
@@ -19,6 +19,7 @@ import Acosites from './Pages/Asociates/Acosites.js';
 import SignupQ from './Pages/Sign up/SignupQ';
 import ProjectPage from './Pages/Project Page/ProjectPage';
 import  Investor from './Pages/Sign up/Investor';
+
 
 function App() {
   return (
@@ -41,6 +42,8 @@ function App() {
       <Route path='/Acosites' element={   <Acosites/>} />
       <Route path='/ProjectPage' element={   <ProjectPage/>} />
       <Route path='/Investor' element={   <Investor/>} />
+      <Route path='/Sourcer' element={   <Sourcer/>} />
+
     </Routes>
     </BrowserRouter>
     </>
