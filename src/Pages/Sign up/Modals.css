@@ -18,8 +18,13 @@
   
   .centered-modal .modal-dialog {
     margin: 0 !important;
-    min-width: 40%;
+    min-width: 80%;
   }
   .modal-content {
-    border-radius: 40px;
+    /* border-radius: 40px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .modal{
+    --bs-modal-width: 90%;
   }

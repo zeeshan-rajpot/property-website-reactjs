@@ -41,13 +41,13 @@
     padding-left: 20px !important;
   }
   .searchicon {
-    margin-left: 90px !important;
+    /* margin-left: 90px !important; */
     margin-top: 21px;
     margin-right: 10px;
     width: 21px;
   }
   .marginmobile{
-    margin-left: 90px !important;
+    margin-left: 40px !important;
     
   }
   .css-6yt8uy.css-6yt8uy.css-6yt8uy{
@@ -96,6 +96,7 @@
   .searchbtn {
     border-radius: 20px;
     display: block;
+    margin-top: 20px;
   }
 
 }

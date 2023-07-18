@@ -1,0 +1,7 @@
+@media screen and (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: 30.333333%;
+        margin-left: 10px;
+    }
+}

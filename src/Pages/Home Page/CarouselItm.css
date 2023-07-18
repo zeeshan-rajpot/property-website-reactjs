@@ -56,9 +56,10 @@
     font-size: 3rem;
   }
   .boderradius {
-    width: 335px;
+    width: 314px;
     height: 335px;
-  }
+    object-fit: cover;
+}
 }
 .bhRnqO {
   background-color: #ccc462;

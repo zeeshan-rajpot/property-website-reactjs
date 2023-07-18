@@ -9,6 +9,7 @@ import AgentMap from './AgentMap';
 import Footer from '../../Common/Footer';
 import BottomBar from "../../Common/BottomNavBar";
 
+
 const DetailPage = () => {
   // const { id } = useParams();
   return (
@@ -20,6 +21,7 @@ const DetailPage = () => {
     <Amenties/>
     {/* <FeaturSection/> */}
     <AgentMap/>
+    
     <Footer/>
     </>
   )

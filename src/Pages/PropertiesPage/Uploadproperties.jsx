@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 // import MyComponent from './MyComponent'
 // import './UploadAgent.css';
 
-export default function UploadAgents() {
+export default function Uploadproperty() {
   const [file, setFile] = useState(null); // State to store the uploaded file
   const [formData, setFormData] = useState({
     title: '',
@@ -95,7 +95,7 @@ export default function UploadAgents() {
               }}
               noValidate
               autoComplete="off"
-            // Handle form submission
+              onSubmit={handleSubmit} // Handle form submission
             >
                 <h3 className="bold">Add title</h3>
               <TextField
@@ -174,7 +174,7 @@ export default function UploadAgents() {
               />
               <input type="file" accept="image/png" onChange={handleFileUpload} />
               <div className='' style={{ alignContent: 'center', textAlign: 'center', width: 'auto' }}>
-                <button  className='submit'   onSubmit={handleSubmit} >Submit</button>
+                <button type="submit" className='submit'>Submit</button>
               </div>
             </Box>
           </Col>

@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/uber-move-text');
-
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 .App {
   text-align: center;
   font-family: 'Uber Move Text', sans-serif;
@@ -60,6 +61,8 @@ body {
   overflow-y: auto; /* allow vertical scrollbar */
 }
 
+
+
 @media only screen and (max-width: 767px) {
   html {
     overflow-x: hidden !important;
@@ -68,4 +71,5 @@ body {
   p{
     font-size: 14px;
   }
+  
 }

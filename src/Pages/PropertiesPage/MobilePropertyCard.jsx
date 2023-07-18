@@ -43,20 +43,20 @@ function MobilePropertyCard(props) {
                         <Carousel />
                         <Link to={`/DetailPage/${props.id}`}>
                         <Card.Body>
-                            <Card.Title className=''>{props.category}</Card.Title>
+                            <Card.Title className='text-secondary'>{props.title}</Card.Title>
                             <Card.Text>
-                                <h1>{props.price} AED/Year</h1>
+                                <h1 style={{color:'#EC6337'}}>{props.price} AED/Year</h1>
                                 <img src={location} alt="" />
-                                <span>  {props.location}</span>
+                                <span className='text-secondary'>  {props.location}</span>
                                 <div className='mt-3'>
                                     <img src={bedicon} alt="" />
-                                    <span>  {props.bedroom}   </span>
+                                    <span className='text-secondary'>  {props.bedroom}   </span>
                                     <img src={broom} alt=""  className='ms-3'/>
-                                    <span>  {props.bathroom}</span>
+                                    <span className='text-secondary'>  {props.bathroom}</span>
                                 </div>
                             </Card.Text>
                             <Card.Footer className=" mt-2 d-flex justify-content-between align-items-center" style={{ background: 'none' }}>
-                                <span>listed 1 week ago</span>
+                                <span className='text-secondary'>listed 1 week ago</span>
 
                                 <img src={email} alt="" />
 

@@ -21,3 +21,17 @@
   border: 1px solid #ec6337 !important;
 }
 
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+  max-width: 150%;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+ 
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+height: 235px;
+margin-top: 20px;
+}
+  }

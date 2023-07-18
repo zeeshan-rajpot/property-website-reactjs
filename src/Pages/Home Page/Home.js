@@ -1,4 +1,7 @@
 import React from "react";
+
+
+
 import Navbars from "../../Common/NavBar";
 import HeroSection from "./Hero-section";
 import SearchSection from "./Searchsection";
@@ -11,8 +14,12 @@ import BuyPropertiesCard from "./BuyPropertiesCard";
 import HomeSearchSection from "./HomeSearchSection";
 import Footer from "../../Common/Footer";
 import BottomBar from "../../Common/BottomNavBar";
+import Featured from "./Featured";
+
 
 const Home = () => {
+
+
   return (
     <>
       <Navbars />
@@ -21,6 +28,7 @@ const Home = () => {
       <HeroSection />
       {/* <Devider /> */}
       <SearchSection />
+      <Featured/>
 
       <SuitableProperty />
       <Section3Home />
@@ -29,6 +37,9 @@ const Home = () => {
       <BuyPropertiesCard />
       {/* <AgentCrousel /> */}
       <HomeSearchSection />
+
+      
+   
       <Footer />
     </>
   );

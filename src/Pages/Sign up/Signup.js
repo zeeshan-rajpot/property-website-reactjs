@@ -21,6 +21,7 @@ import Signupdropdownbtn from "./Signupdropdownbtn";
 import './Modals.css'
 import BottomBar from '../../Common/BottomNavBar'
 
+
 function Signup() {
   const [show, setShow] = useState(false);
 

@@ -10,12 +10,18 @@ import bbqgrill from '../../images/bbqgrill.svg'
 import exercise from '../../images/exercise.svg'
 import firepit from '../../images/firepit.svg'
 import kitchen from '../../images/kitchen.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+
 
 const Amenties = () => {
   return (
 <>
 <Container>
     <Row>
+    <FontAwesomeIcon icon={faCoffee} size="lg" color="red" />
+
+
         <Col><h3 className='text-secondary'>Amenties</h3></Col>
     </Row>
     <Row className='justify-contant-center'>

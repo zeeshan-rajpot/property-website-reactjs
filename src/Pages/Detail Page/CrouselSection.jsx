@@ -26,15 +26,12 @@ const CrouselSection = () => {
 
   let slides = [
     <img src={property.propertyImages[0]} alt="1" style={{
-      maxWidth: 700,
-      maxHeight: 300,
-      width: 'auto',
-      height: 'auto',
+
     }} />,
     <img src={property.propertyImages[1]} alt="2"style={{
      
       width: 'auto',
-      height: 'auto',
+      
     }} />,
     <img src="https://picsum.photos/800/302/?random" alt="3" />,
     <img src="https://picsum.photos/800/303/?random" alt="4" />,
