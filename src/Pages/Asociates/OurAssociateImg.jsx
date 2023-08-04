@@ -13,7 +13,7 @@ const OurAssociateImg = () => {
 
   const fetchAssociates = async () => {
     try {
-      const response = await axios.get(`${baseurl}getAllAgent`);
+      const response = await axios.get(`${baseurl}/getAllAgent`);
       setAssociates(response.data);
       console.log(response.data)
     } catch (error) {
@@ -31,9 +31,15 @@ const OurAssociateImg = () => {
             </Col>
           </Row>
           <Row>
+          
             {associates.map((associate, index) => (
-              <Col lg={4} className="Associatecard" key={index}>
-                <img src={associate.profilePicture} alt="" style={{width:"200px" , height:"200px" , borderRadius:"100%"}} />
+             
+             <Col lg={4} className="Associatecard" key={index}>
+                <img src={associate.profilePicture} alt="" style={{width:"200px" , height:"200px" , borderRadius:"100%" , marginTop:'20px'}} />
+             
+             <br />
+             <br />
+             
                 <AssociateImgCard
                   name={associate.name}
                   designation={associate.companyName}

@@ -4,13 +4,14 @@ import PropCard from './PropCard';
 import MobilePropertyCard from './MobilePropertyCard';
 import { Link } from 'react-router-dom';
 import './properties.css'; // Import the CSS file for styling
+import { baseurl } from '../Const';
 
 const Properties = () => {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
     axios
-      .get('http://localhost:8222/getAllProperty')
+      .get(`${baseurl}/getAllPropertyByUser`)
       .then((response) => {
         setProperties(response.data);
         console.log(response.data);
@@ -47,7 +48,7 @@ const Properties = () => {
             <MobilePropertyCard
               key={property._id}
               id={property._id}
-              image={property.propertyImages[0]}
+              image={property.propertyImages}
               title={property.title}
               price={property.price}
               timetolist={property.timetolist}

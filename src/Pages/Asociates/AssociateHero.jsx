@@ -8,7 +8,7 @@ const AssociateHero = () => {
       <Container className="AssociateHeroBg" fluid>
         <Row>
           <Col className="flexcenter">
-            <h1 className="rem4">Our Associate</h1>
+            <h1 className="rem4" color="white">Our Associate</h1>
             <p className="rem2">
               Text fill up rooms perfect for laid-back meet-ups to corporate
               boardrooms made for wowing potential clients. We’ve got your

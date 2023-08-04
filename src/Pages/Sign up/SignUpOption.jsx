@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row, Button, Modal } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
+import axios from 'axios'; // Import Axios
+import { baseurl } from '../Const';
 import './SignUpOption.css';
 import Sourcer from './Sourcer';
 import Investor from './Investor';
 
-export const SignUpOption = () => {
+export const SignUpOption = ({ formData }) => {
+  const { name, email, password, country, selectedCity } = formData;
   const [showSourceModal, setShowSourceModal] = useState(false);
   const [showInvestModal, setShowInvestModal] = useState(false);
+  const [userType, setUserType] = useState(''); // New state variable to store user type
+  const [investorId, setInvestorId] = useState(''); // State variable to store the investorId
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (userType !== '') {
+      // Call the postDataToAPI function only when userType is not an empty string
+      postDataToAPI();
+    }
+  }, [userType]);
 
   const handleSourceModalOpen = () => {
     setShowSourceModal(true);
+    setUserType('sourcer'); // Set the user type to 'sourcer' when clicking on the "Source" button
   };
 
   const handleSourceModalClose = () => {
@@ -19,11 +32,47 @@ export const SignUpOption = () => {
 
   const handleInvestModalOpen = () => {
     setShowInvestModal(true);
+    setUserType('investor'); // Set the user type to 'investor' when clicking on the "Invest" button
   };
 
   const handleInvestModalClose = () => {
     setShowInvestModal(false);
   };
+
+  // Function to post the form data to the API
+  const postDataToAPI = () => {
+    const data = {
+      name,
+      email,
+      password,
+      country,
+      city: selectedCity,
+      type: userType, // Use the userType state variable to pass the correct type to the API
+    };
+
+    console.log('Data:', data);
+    axios.post(`${baseurl}/createUser`, data)
+    .then(response => {
+      // Handle the API response if needed
+      console.log('API Response:', response.data);
+
+      // Assuming the response contains the ID after successful signup
+      const receivedInvestorId = response.data._id; // Replace 'investorId' with the actual key used in the API response
+
+      setInvestorId(receivedInvestorId); // Store the received ID in the state variable
+    })
+    .catch(error => {
+      // Handle errors if the API request fails
+      console.error('API Error:', error);
+
+      // Check if the error status code is 409 (Conflict)
+      if (error.response && error.response.status === 409) {
+        alert('User already exists. Please use a different email.');
+        // window.location.href = '/Signup';
+        navigate("/Signup");
+      }
+    });
+};
 
   return (
     <>
@@ -41,19 +90,19 @@ export const SignUpOption = () => {
         </Row>
         <Row>
           <Button className="Source display-6 mt-4 shadow text-decoration-none" onClick={handleSourceModalOpen}>
-            Source
+          Sourcer
           </Button>
           <Button className="Invest display-6 mt-4 mb-5 shadow text-decoration-none" onClick={handleInvestModalOpen}>
-            Invest
+          Investor
           </Button>
         </Row>
       </Container>
 
       {/* Source Modal */}
-      <Modal show={showSourceModal} onHide={handleSourceModalClose} style={{width:'100%'}}>
+      <Modal show={showSourceModal} onHide={handleSourceModalClose} style={{ width: '100%' }}>
         {/* Add your source component JSX here */}
         <Modal.Body>
-         <Sourcer/>
+          <Sourcer />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleSourceModalClose}>
@@ -64,9 +113,9 @@ export const SignUpOption = () => {
 
       {/* Invest Modal */}
       <Modal show={showInvestModal} onHide={handleInvestModalClose}>
-      
+
         <Modal.Body>
-<Investor/>
+          <Investor investorId={investorId} />
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleInvestModalClose}>
@@ -77,3 +126,5 @@ export const SignUpOption = () => {
     </>
   );
 };
+
+// export default SignUpOption

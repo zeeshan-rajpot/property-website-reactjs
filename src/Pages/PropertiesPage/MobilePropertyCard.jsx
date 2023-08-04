@@ -13,6 +13,9 @@ import HeartBtn from './RadioBtn';
 import { Link } from 'react-router-dom';
 
 function MobilePropertyCard(props) {
+    const slides = [
+        props.image
+      ];
     return (
         <Row xs={1} md={2} className="g-4">
            
@@ -37,10 +40,10 @@ function MobilePropertyCard(props) {
                             zIndex: '100'
                         }}
                     >
-                        <HeartBtn />
+                        {/* <HeartBtn /> */}
                     </div>
                     <Card className="border-3 " border="secondary" style={{ border: '1px solid rgb(0 0 0 / 17%)' }}>
-                        <Carousel />
+                        <Carousel slides={slides} />
                         <Link to={`/DetailPage/${props.id}`}>
                         <Card.Body>
                             <Card.Title className='text-secondary'>{props.title}</Card.Title>

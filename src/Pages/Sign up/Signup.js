@@ -4,16 +4,16 @@ import { Container, Row, Col } from "react-bootstrap";
 // import SignupQ from "./SignupQ";
 import { SignUpOption } from "./SignUpOption";
 import { Link } from "react-router-dom";
-
-
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faCity } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-bootstrap/Modal";
 import loginimg from "../../images/shutterstock_1935754699 [Converted].png";
 import logo from "../../images/Image 11.png";
-import email from "../../images/Path 9028.png";
-import password from "../../images/Group 9504.png";
-import nameicon from "../../images/noun-profile-5657081.svg";
-import cityicon from "../../images/noun-city-3922352.svg";
+
 import Footer from "../../Common/Footer";
 import Navbars from "../../Common/NavBar";
 
@@ -24,6 +24,54 @@ import BottomBar from '../../Common/BottomNavBar'
 
 function Signup() {
   const [show, setShow] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [country, setCountry] = useState("");
+  const [selectedCity, setSelectedCity] = useState(""); // Assuming you have a city selection component for the user to choose from.
+
+    const handleContinueClick = () => {
+      // Validation checks
+      if (!name || !email || !password || !confirmPassword || !selectedCity || !country) {
+        // Show alert if any of the required fields are missing
+        alert("Please fill in all the required fields.");
+        return;
+      }
+    
+      if (password !== confirmPassword) {
+        // Show alert if passwords do not match
+        alert("Passwords do not match. Please try again.");
+        return;
+      }
+      
+      if (password.length  <=  8) {
+        // Show alert if password is not 8 characters long
+        alert("Password must be exactly 8 characters long. Please try again.");
+        return;
+      }
+      // Regular expression to validate email format
+      const emailRegex = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
+      if (!emailRegex.test(email)) {
+        // Show alert if email format is invalid
+        alert("Invalid email format. Please enter a valid email address.");
+        return;
+      }
+    
+    // Log the form data to the console.
+    console.log("Name:", name);
+    console.log("Email:", email);
+    console.log("Password:", password);
+    console.log("Selected City:", selectedCity);
+    console.log("country:", country);
+
+    // Open the modal
+    setShow(true);
+
+    // postDataToAPI();
+  };
+
+
 
   return (
     <>
@@ -56,55 +104,88 @@ function Signup() {
             </Link>
             <br />
             <br />
-            <img src={nameicon} alt="" srcset="" />
+            <FontAwesomeIcon icon={faUser} style={{color: "#9e9e9e",fontSize:'20px'}} />
             <input
               type="text"
               placeholder="Name"
               className="ms-2"
               style={{ width: "280px" }}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
             />
             <br />
             <br />
-            <img src={email} alt="" srcset="" />
+            <FontAwesomeIcon icon={faEnvelope} style={{color: "#9e9e9e",fontSize:'20px'}} />
+
             <input
               type="text"
               placeholder="Email"
               className="ms-2"
               style={{ width: "280px" }}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
             <br />
             <br />
-            <img src={password} alt="" srcset="" />
+            <FontAwesomeIcon icon={faLock} style={{color: "#9e9e9e",fontSize:'20px'}} />
             <input
               type="Password"
               placeholder="Password"
               className="ms-2"
               style={{ width: "280px" }}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
             <br />
             <br />
-            <img src={password} alt="" srcset="" />
+            <FontAwesomeIcon icon={faLock} style={{color: "#9e9e9e",fontSize:'20px'}} />
             <input
               type="Password"
-              placeholder="Confrim Password"
+              placeholder="Confirm Password"
               className="ms-2"
               style={{ width: "280px" }}
+              value={confirmPassword}
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
             <br />
             <br />
             <div
-              className="d-flex"
+              className=""
               style={{ alignItems: "center", justifyContent: "center" }}
             >
-              <img src={cityicon} alt="" srcset="" />
-              <Signupdropdownbtn />
+            <FontAwesomeIcon icon={faGlobe} style={{color: "#9e9e9e",fontSize:'20px'}} />
+          {/* Dropdown btn for city and country ?\ */}
+
+          <input
+              type="text"
+              placeholder="Country"
+              className="ms-2"
+              style={{ width: "280px" }}
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+            />
+               <br />
+            <br />
+            <FontAwesomeIcon icon={faCity} style={{color: "#9e9e9e",fontSize:'20px'}} />
+
+             <input
+              type="text"
+              placeholder="City"
+              className="ms-2"
+              style={{ width: "280px" }}
+              value={selectedCity}
+              onChange={(e) => setSelectedCity(e.target.value)}
+            />
+
+          
             </div>
             <br />
             <br />
 
-            <button variant="primary" onClick={() => setShow(true)} className="Continuebtn">
+            <button variant="primary" onClick={handleContinueClick} className="Continuebtn">
               Continue
             </button>
+
 
             <Modal
               show={show}
@@ -115,8 +196,8 @@ function Signup() {
             >
 
               <Modal.Body>
-                {/* <SignupQ /> */}
-                <SignUpOption/>
+
+                <SignUpOption formData={{ name, email, password, confirmPassword, selectedCity, country }}  />
               </Modal.Body>
             </Modal>
             <br />

@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     top: '0',
     backgroundColor: "white",
     borderBottom: '2px solid #FC780B', // Added bottom border
-    zIndex:'100'
+    zIndex:'100000000'
   },
   icon: {
     fontSize: 100, // Increased icon size

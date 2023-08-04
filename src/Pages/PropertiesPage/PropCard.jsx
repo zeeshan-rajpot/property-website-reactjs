@@ -21,8 +21,8 @@ const PropCard = (props) => {
   return (
     <>
       <Container>
-        <Row className="my-5">
-          <Col md={6}>
+        <Row className="my-5 shadow " style={{borderRadius:'50px'}}>
+          <Col md={6} style={{paddingLeft:'0'}}>
             <div>
               <div
                 style={{
@@ -45,10 +45,11 @@ const PropCard = (props) => {
               
               <Link to={`/DetailPage/${props.id}`}>
                 <img
-                  className="w-100"
+                  className="w-100 border"
                   height={"350px"}
                   src={props.image}
                   alt=""
+                  style={{borderRadius:'50px' , objectFit:'contain'}}
                 />
               </Link>
              
@@ -62,8 +63,8 @@ const PropCard = (props) => {
           </Col>
 
           <Col md={6}>
-            <Row className="my-4 ">
-              <Col md={7}>
+            <Row className="my-4  ">
+              <Col md={7} >
                 <div>
                   <h5 className=" my-3 rem3" style={{ color: "#BABABA" }}>
                     {props.title}
@@ -119,7 +120,7 @@ const PropCard = (props) => {
               <Col>
                 <div>
                   <img src={bedicon} alt="" />{" "}
-                  <span className="mx-2 rem2" style={{ color: "#BABABA" }}>
+                  <span className="mx-2 " style={{ color: "#BABABA" ,fontSize:'16px' }}>
                     {props.bedroom} bedroom
                   </span>{" "}
                 </div>
@@ -127,7 +128,7 @@ const PropCard = (props) => {
               <Col>
                 <div>
                   <img src={broom} alt="" />{" "}
-                  <span className="mx-2 rem2" style={{ color: "#BABABA" }}>
+                  <span className="mx-2 " style={{ color: "#BABABA" ,fontSize:'16px' }}>
                 {props.bathroom} bathroom
                   </span>{" "}
                 </div>
@@ -135,14 +136,14 @@ const PropCard = (props) => {
               <Col>
                 <div>
                   <img src={broom2} alt="" />{" "}
-                  <span className="mx-2 rem2" style={{ color: "#BABABA" }}>
+                  <span className="mx-2 " style={{ color: "#BABABA" ,fontSize:'16px' }}>
                    {props.area} sqft
                   </span>{" "}
                 </div>
               </Col>
 
               <Col lg={12}>
-                <img className="w-100" src={bottomline} alt="" />
+               <hr  style={{ color:'rgb(236, 99, 55)'  , border:'2px solid #ec6337'}}/>
               </Col>
               <Col lg={12}>
                 <div>

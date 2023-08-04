@@ -51,3 +51,9 @@ font-size: 18px;
       display: none;
     }
   }
+  .active-nav-link{
+    color: rgb(236, 99, 55) !important;
+    background-color: rgb(236, 99, 55) ;
+    border-bottom: 2px solid #007bff; /* Blue */
+
+  }

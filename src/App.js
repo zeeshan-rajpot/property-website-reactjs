@@ -19,6 +19,7 @@ import Acosites from './Pages/Asociates/Acosites.js';
 import SignupQ from './Pages/Sign up/SignupQ';
 import ProjectPage from './Pages/Project Page/ProjectPage';
 import  Investor from './Pages/Sign up/Investor';
+import Uploadproperty from './Pages/UploadProperty/Uploadproperty';
 
 
 function App() {
@@ -27,7 +28,9 @@ function App() {
 
    
     
-    
+
+      <Uploadproperty />
+   
   
     <BrowserRouter>
     <Routes>

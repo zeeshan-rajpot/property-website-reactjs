@@ -5,16 +5,13 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
 export default function Signupdropdownbtn() {
-
-
   return (
     <div>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-standard-label">Country</InputLabel>
+        <InputLabel id="country-label">Country</InputLabel>
         <Select
-          labelId="demo-simple-select-standard-label"
-          id="demo-simple-select-standard"
-       
+          labelId="country-label"
+          id="country"
           label="Country"
         >
           <MenuItem value="">
@@ -26,11 +23,10 @@ export default function Signupdropdownbtn() {
         </Select>
       </FormControl>
       <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-        <InputLabel id="demo-simple-select-standard-label">City</InputLabel>
+        <InputLabel id="city-label">City</InputLabel>
         <Select
-          labelId="demo-simple-select-standard-label"
-          id="demo-simple-select-standard"
-     
+          labelId="city-label"
+          id="city"
           label="City"
         >
           <MenuItem value="">

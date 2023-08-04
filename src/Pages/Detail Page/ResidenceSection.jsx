@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { useEffect ,useState } from "react";
 import "./residence.css";
+import { baseurl } from "../Const";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import phone from "../../images/phone.svg";
@@ -13,7 +14,7 @@ const ResidenceSection = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8222/getProperty/${id}`)
+      .get(`${baseurl}/getProperty/${id}`)
       .then((response) => {
         setProperty(response.data);
         console.log(response.data);

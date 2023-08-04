@@ -3,8 +3,8 @@ import { Typography, TextField, Button, Stepper, Step, StepLabel } from '@materi
 import { useForm, Controller, FormProvider, useFormContext } from 'react-hook-form';
 import { makeStyles } from '@material-ui/core/styles';
 import { useNavigate } from 'react-router-dom';
-
-import SourceStep1 from './SourceStep1';
+import Uploadproperties from '../UploadProperty/Uploadproperties';
+import InvestorAnswer from '../UploadProperty/investorAnswer';
 import SourceStep2 from './SourceStep2';
 import SourceStep3 from './SourceStep3';
 
@@ -19,26 +19,22 @@ function getSteps() {
     '',
     '',
     '',
-    '',
-    '', // Add an empty step for Step 3
+   
   ];
 }
-
 function getStepContent(step, showStep3, handleChoice) {
   switch (step) {
     case 0:
-      return <SourceStep1 />;
+      return <InvestorAnswer />;
     case 1:
       return <SourceStep2 handleChoice={handleChoice} />;
     case 2:
-      return showStep3 ? <SourceStep3 /> : 'Welcome to inprop';
-    // case 3:
-    //   return <SourceStep3 />;
-    // default:
-    //   return 'unknown step';
+      return showStep3 ? <Uploadproperties /> : 'Welcome to inprop';
+    case 3:
+      return <Uploadproperties /> ;
+   
   }
 }
-
 const Sourcer = () => {
   const classes = useStyles();
   const methods = useForm({

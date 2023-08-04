@@ -6,6 +6,7 @@ import { Col } from "react-bootstrap";
 const AssociateImgCard = (props) => {
   return (
     <>
+    
       <Col  style={{ lineHeight: "10px" }}>
         <span href="#" class="Name">
           {" "}

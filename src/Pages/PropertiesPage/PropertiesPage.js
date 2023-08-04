@@ -5,7 +5,7 @@ import Navbars from "../../Common/NavBar";
 import Footer from "../../Common/Footer";
 import SearchBarProperties from "./SearchBarProperties";
 import Propertiesimg from "./Propertiesimg";
-import AddProperty from './AddProperty'
+import AddProperty from '../UploadProperty/AddProperty'
 import Properties from "./Properties";
 import PaginationContainer from "./PaginationContainer";
 import AreaDownTown from "./AreaDownTown";

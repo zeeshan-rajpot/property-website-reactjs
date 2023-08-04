@@ -10,18 +10,20 @@ const SourceStep2 = ({ handleChoice }) => {
   };
 
   const handleNoClick = () => {
-    navigate('/Login'); // Replace '/' with the desired home page route
+    navigate('/'); // Replace '/' with the desired home page route
   };
 
   return (
     <Container>
-      <h1>Did you check the policy?</h1>
+      <h1>Do you want to Upload Property ?</h1>
+      <div className='text-center'>
       <Button variant="contained" color="primary" onClick={handleYesClick}>
         Yes
       </Button>
       <Button variant="contained" color="secondary" onClick={handleNoClick}>
         No
       </Button>
+      </div>
     </Container>
   );
 };

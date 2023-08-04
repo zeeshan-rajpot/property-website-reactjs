@@ -8,6 +8,7 @@ import Amenties from './Amenties';
 import AgentMap from './AgentMap';
 import Footer from '../../Common/Footer';
 import BottomBar from "../../Common/BottomNavBar";
+import Crouseldet from './Crouseldet';
 
 
 const DetailPage = () => {
@@ -16,7 +17,8 @@ const DetailPage = () => {
     <>
     <Navbars/>
     <BottomBar/>
-    <CrouselSection/>
+    {/* <CrouselSection/> */}
+    <Crouseldet/>
     <ResidenceSection />
     <Amenties/>
     {/* <FeaturSection/> */}

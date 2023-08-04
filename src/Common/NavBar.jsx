@@ -1,4 +1,4 @@
-// import Button from 'react-bootstrap/Button';
+import React, { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -12,6 +12,22 @@ import logoimg from "../../src/images/Mask Group 1.svg";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
 function Navbars() {
+
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  // Check if the user is logged in on component mount
+  useEffect(() => {
+    const authToken = localStorage.getItem("authToken");
+    setLoggedIn(!!authToken); // Convert the token existence into a boolean
+  }, []);
+
+  const handleLogout = () => {
+    // Clear the authentication token from local storage upon logout
+    localStorage.removeItem("authToken");
+    setLoggedIn(false);
+  };
+
+
   return (
     <>
       <div className="NavbarMobile">
@@ -37,7 +53,7 @@ function Navbars() {
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                     <NavLink to="/Home">
-                      <p className="nav-link" style={{fontSize:'18px'}}>In Prop</p>
+                      <p className="nav-link" style={{ fontSize: '18px' }}>In Prop</p>
                     </NavLink>
                   </Offcanvas.Title>
                 </Offcanvas.Header>
@@ -50,17 +66,17 @@ function Navbars() {
                   </NavLink> */}
                     <NavLink to="/PropertiesPage">
                       <span className="nav-link navpaddingright">
-                        <p style={{fontSize:'18px'}}> Properties Page</p>
+                        <p style={{ fontSize: '18px' }}> Properties</p>
                       </span>
                     </NavLink>
                     <NavLink to="/Acosites">
                       <span className="nav-link navpaddingright">
-                        <p style={{fontSize:'18px'}}>Associate</p>
+                        <p style={{ fontSize: '18px' }}>Associate</p>
                       </span>
                     </NavLink>
                     <NavLink to="/ProjectPage">
                       <span className="nav-link navpaddingright">
-                        <p style={{fontSize:'18px'}}>ProjectPage</p>
+                        <p style={{ fontSize: '18px' }}>Projects</p>
                       </span>
                     </NavLink>
                     <Form className="d-flex">
@@ -74,12 +90,18 @@ function Navbars() {
                     </Form>
 
                     <NavLink to="/Login">
-                      <span className="nav-link navpaddingright">
-                        <p style={{fontSize:'18px'}}> Sign In /Signup</p>
-                      </span>
+                      {!loggedIn ? ( // Show "Sign In / Signup" when not logged in
+                        <span className="nav-link navpaddingright">
+                          <p style={{ fontSize: "18px" }}> Sign In / Signup</p>
+                        </span>
+                      ) : ( // Show "Logout" when logged in
+                        <span className="nav-link navpaddingright" onClick={handleLogout}>
+                          <p style={{ fontSize: "18px" }}> Logout</p>
+                        </span>
+                      )}
                     </NavLink>
 
-                  
+
                     <div>
                       <img src={Whatsapp} alt="" />{" "}
                       <span style={{ fontSize: "12px", color: "#BABABA" }}>

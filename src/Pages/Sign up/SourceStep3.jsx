@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from '@mui/material/Button';
+import { baseurl } from '../Const';
 // import MyComponent from './MyComponent'
 // import './UploadAgent.css';
 
@@ -44,7 +45,7 @@ export default function UploadAgents() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const apiUrl = 'http://localhost:8222/addProperty';
+    const apiUrl = `${baseurl}/addProperty`;
     const apiKey = {
       title: formData.title,
       address: formData.address,

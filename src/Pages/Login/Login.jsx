@@ -12,6 +12,7 @@ import FacebookIcon from "../../images/facebookicon.svg";
 import GmailIcon from "../../images/gmailicon.svg";
 import Footer from "../../Common/Footer";
 import BottomBar from "../../Common/BottomNavBar";
+import { baseurl } from "../Const";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -36,9 +37,11 @@ const Login = () => {
     };
 
     // Send the login request to the API
-    axios.post("https://dolphin-app-ldyyx.ondigitalocean.app/login", payload)
+    axios.post(`${baseurl}/loginUser`, payload)
       .then((response) => {
         if (response.status === 200) {
+          // Save the token to local storage
+          localStorage.setItem('authToken', response.data.token);
           // Redirect to the home page
           navigate("/home");
           // Display the congratulatory message with an emoji

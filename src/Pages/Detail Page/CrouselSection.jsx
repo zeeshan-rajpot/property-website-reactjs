@@ -1,7 +1,8 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
 import { Carousel } from '3d-react-carousal';
+import { useState, useEffect } from 'react';
 import axios from 'axios'
+import { baseurl } from '../Const';
 import { useParams } from 'react-router-dom';
 import './CarsoulSection.css'
 const CrouselSection = () => {
@@ -10,7 +11,7 @@ const CrouselSection = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8222/getProperty/${id}`)
+      .get(`${baseurl}/getProperty/${id}`)
       .then((response) => {
         setProperty(response.data);
         // console.log(response.data);

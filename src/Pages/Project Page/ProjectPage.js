@@ -7,7 +7,7 @@ import ProjectCard from "../Project Page/ProjectCard";
 import axios from "axios"; // Import Axios
 import { baseurl } from "../Const";
 
-import houseimg from "../../images/jarek-ceborski-jn7uVeCdf6U-unsplash.png";
+// import houseimg from "../../images/jarek-ceborski-jn7uVeCdf6U-unsplash.png";
 import BottomBar from "../../Common/BottomNavBar";
 
 const ProjectPage = () => {
@@ -19,8 +19,9 @@ const ProjectPage = () => {
  
   const fetchProjects = async () => {
     try {
-      const response = await axios.get(`${baseurl}getAllProject`);
+      const response = await axios.get(`${baseurl}/getAllProject`);
       setProjects(response.data);
+      console.log(response.data)
     } catch (error) {
       console.error("Error fetching projects:", error);
     }
@@ -35,7 +36,7 @@ const ProjectPage = () => {
       {projects.map((project, index) => (
         <ProjectCard
           key={index}
-          img={houseimg}
+          img={project.profilePicture}
           delivrydate={project.deliveryYear}
           projectname={project.projectName}
           devlporename={project.developerName}
