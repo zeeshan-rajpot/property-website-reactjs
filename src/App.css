@@ -60,18 +60,36 @@ body {
   overflow-x: hidden; /* hide horizontal scrollbar */
   overflow-y: auto; /* allow vertical scrollbar */
 }
-
-
-
+.bootombar{
+  display: none !important;
+}
+.mobileview{
+  display: none !important;
+}
+.mobileblock{
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   html {
     overflow-x: hidden !important;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   p{
     font-size: 14px;
   }
-  
+  .dektopview{
+  display: none !important;
+  }
+  .bootombar{
+    display: flex !important;
+  }
+  .mobileview{
+    display: flex !important;
+  }
+  .mobileblock{
+    display: block !important;
+  }
+
 }
 
 

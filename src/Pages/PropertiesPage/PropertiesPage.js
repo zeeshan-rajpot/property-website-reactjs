@@ -17,8 +17,7 @@ const PropertiesPage = () => {
 
   return (
     <>
-      <Navbars />
-      <BottomBar />
+
       <AddProperty/>
       <PropertiesHero />
       <SearchBarProperties />

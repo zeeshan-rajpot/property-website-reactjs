@@ -22,8 +22,8 @@ const Home = () => {
 
   return (
     <>
-      <Navbars />
-      <BottomBar />
+      {/* <Navbars /> */}
+      {/* <BottomBar /> */}
 
       <HeroSection />
       {/* <Devider /> */}

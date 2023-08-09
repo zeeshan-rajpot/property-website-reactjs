@@ -15,8 +15,7 @@ import BottomBar from '../../Common/BottomNavBar'
 const Acosites = () => {
   return (
     <>
-    <Navbars/>
-    <BottomBar/>
+   
 <AssociateHero/>
 <OurAssociateImg/>
 {/* <PropCard/>

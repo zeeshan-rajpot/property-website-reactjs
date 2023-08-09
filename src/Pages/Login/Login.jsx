@@ -62,8 +62,7 @@ const Login = () => {
 
   return (
     <>
-      <Navbars />
-      <BottomBar />
+   
       <Container>
         <Row className="loginrow">
           <Col lg={4} className="text-center bgimg">

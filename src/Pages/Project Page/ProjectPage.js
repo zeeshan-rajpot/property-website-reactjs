@@ -29,8 +29,7 @@ const ProjectPage = () => {
 
   return (
     <>
-      <NavBar />
-      <BottomBar />
+
       <ProjectHero />
       <NewProject />
       {projects.map((project, index) => (

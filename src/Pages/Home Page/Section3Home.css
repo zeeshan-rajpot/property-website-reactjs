@@ -27,4 +27,12 @@
 .section3div{
     height: auto;
 }
+.mobilehieghtsection3{
+    height: 40vh !important;
+}
+
+.mobiletextsection3{
+    font-size: 13px !important;
+}
+
 }

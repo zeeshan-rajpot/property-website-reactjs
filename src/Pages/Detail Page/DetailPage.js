@@ -15,8 +15,7 @@ const DetailPage = () => {
   // const { id } = useParams();
   return (
     <>
-    <Navbars/>
-    <BottomBar/>
+
     {/* <CrouselSection/> */}
     <Crouseldet/>
     <ResidenceSection />

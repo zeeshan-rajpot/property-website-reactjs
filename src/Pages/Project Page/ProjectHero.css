@@ -3,7 +3,7 @@
     background-image: url('../../images/projectcard.png');
     background-repeat: no-repeat;
     background-size: cover;
-    /* height: 60vh; */
+    height: 80vh;
   }
   
   .ProjectHeroBg::before {

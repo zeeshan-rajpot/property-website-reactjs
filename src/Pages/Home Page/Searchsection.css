@@ -1,3 +1,15 @@
+.custom-dropdown-button {
+  border: none; /* Remove the border */
+  border-bottom: 1px solid grey; /* Add the bottom border */
+  background-color: transparent; /* Remove the background color */
+}
+
+.dropdown-icon {
+  width: 20px; /* Adjust the width of the image */
+  margin-right: 5px; /* Add spacing between the image and text */
+}
+
+
 .flexsection {
   display: flex;
   align-items: center;
@@ -21,6 +33,71 @@
   height: 42px;
  
 }
+
+.borderRightHieght{
+  position: relative;
+  /* background-color: #f0f0f0; */
+
+}
+
+.borderRightHieght::after {
+  content: "";
+  position: absolute;
+  top: 36%;
+  right: 0;
+  height: 50%;
+  border-right: 1px solid grey; /* Adjust the width and color as needed */
+}
+
+
+
+
+
+
+
+
+
+.input-container {
+  position: relative;
+  flex-grow: 1;
+}
+.input-with-icon {
+  border: none;
+  border-bottom: 1px solid #bcbcbc;
+  padding: 0px;
+  width: 100%;
+  height: 37px;
+  margin-top: 14px;
+  background: no-repeat;
+  font-size: 11px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1px;
+  bottom: 20%;
+  height: 31%;
+  padding-left: 0px;
+}
+.select option {
+  font-size: 10px !important;
+  color: #000 !important;
+  background-color: #fff !important;
+}
+.select option:active {
+  background-color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input{
@@ -51,13 +128,16 @@
     
   }
   .css-6yt8uy.css-6yt8uy.css-6yt8uy{
-    min-width: 200px !important;
+    min-width: 152px !important;
   }
   .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
-	min-width: 200px !important;
+	min-width: 152px !important;
   }
   .css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input{
-    min-width: 200px !important;
+    min-width: 152px !important;
+  }
+  .css-13s481-MuiInputBase-root-MuiInput-root-MuiSelect-root{
+    max-width: 125px;
   }
 }
 

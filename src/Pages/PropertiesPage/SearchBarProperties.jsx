@@ -17,12 +17,12 @@ const SearchBarProperties = () => {
             <img className="searchicon" src={searchimg} alt="" srcset=""  style={{ marginLeft: "0" }}  />
             <input
               type="text"
-              placeholder="City, Community or Building"
+              placeholder="City,Community or Building"
               className="ms-2"
               style={{
                 border: "none",
                 background: "none",
-                paddingBottom: "10px",
+                // paddingBottom: "10px",
               }}
             />
           </Col>
@@ -38,7 +38,7 @@ const SearchBarProperties = () => {
             />
           </Col>
           <Col lg={2} sm={6} className="searchbarcolflex ">
-          <img className="searchicon" src={bedicon} alt="" srcset=""  style={{ marginLeft: "15px" }}  />
+          <img className="searchicon" src={bedicon} alt="" srcset=""  style={{ marginLeft: "0px" }}  />
                   <Dropdownbtn
                     title="Beds & Baths"
                     option1="option1"

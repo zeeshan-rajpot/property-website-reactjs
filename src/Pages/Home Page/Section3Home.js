@@ -7,10 +7,10 @@ const Section3Home = () => {
   return (
     <>
       <div className="section3div margin3sectiontop">
-        <Container>
-          <Row className={"   marginweb"} style={{ height: "60vh" }}>
+        <Container >
+          <Row className={"marginweb mobilehieghtsection3"} style={{ height: "60vh" ,paddingBottom:'50px'}}>
             <Col lg={5} className="HerosectionCol">
-              <h2 className="readyheading">
+              <h2 className="readyheading" style={{paddingTop:'50px' }}>
                 <b>Ready</b>{" "}
               </h2>
 
@@ -24,12 +24,12 @@ const Section3Home = () => {
               <img src={houseimg} />
             </Col>
             <Col lg={6} className="HerosectionCol  ">
-              <p className="text-secondary  " style={{fontSize:'18px'}}>
+              <p className="text-secondary  mobiletextsection3" style={{fontSize:'18px'}}>
                 Text fill up..... have ratings on our platform. A ‘Book It
                 Again’ percentage score tells you how a event has performed in
                 the past. Over 10,000 venues have ratings on our platform.
               </p>
-              <p className="text-secondary " style={{fontSize:'18px'}}>
+              <p className="text-secondary mobiletextsection3" style={{fontSize:'18px'}}>
                 A ‘Book It Again’ percentage score tells you how a venue has
                 performed in the past.
               </p>
