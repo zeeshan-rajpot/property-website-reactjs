@@ -1,5 +1,5 @@
 import React from "react";
-
+import MobileFooter from "../../Common/MobileFooter";
 import PropertiesHero from "./PropertiesHero";
 import Navbars from "../../Common/NavBar";
 import Footer from "../../Common/Footer";
@@ -20,23 +20,18 @@ const PropertiesPage = () => {
 
       <AddProperty/>
       <PropertiesHero />
+      <div style={{position:'absolute' ,marginTop:'-19px'}}>
       <SearchBarProperties />
+      </div>
       <Propertiesimg />
-      <Container style={{ marginTop: '20px' }}>
-
-        <Row>
-          <Col>
-            <h1 className="h1" style={{ fontSize: '25px' }}>Property Buy in <span className="h1" style={{ color: '#EC6337', fontSize: '25px' }}>Downtown Dubai</span></h1>
-          </Col>
-
-        </Row>
-      </Container>
+      
 
       <Properties/>
 
       <PaginationContainer />
       <AreaDownTown />
       <Footer />
+      <MobileFooter/>
     </>
   );
 };

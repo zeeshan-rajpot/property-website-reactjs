@@ -69,6 +69,39 @@ body {
 .mobileblock{
   display: none;
 }
+.TabborderRadius{
+  border-radius: 30px !important;
+  background-color: white !important;
+}
+
+/* input,
+input::placeholder {
+    font: 2px ;
+} */
+
+
+
+
+
+
+
+.Update {
+	background-color:#fc770b;
+	border-radius:28px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	font-family:Arial;
+	font-size:12px;
+	padding:5px 31px;
+	text-decoration:none;
+}
+
+
+
+
+
 @media only screen and (max-width: 767px) {
   html {
     overflow-x: hidden !important;

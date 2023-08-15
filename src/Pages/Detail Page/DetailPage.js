@@ -9,7 +9,7 @@ import AgentMap from './AgentMap';
 import Footer from '../../Common/Footer';
 import BottomBar from "../../Common/BottomNavBar";
 import Crouseldet from './Crouseldet';
-
+import MobileFooter from '../../Common/MobileFooter'
 
 const DetailPage = () => {
   // const { id } = useParams();
@@ -24,6 +24,7 @@ const DetailPage = () => {
     <AgentMap/>
     
     <Footer/>
+    <MobileFooter/>
     </>
   )
 }

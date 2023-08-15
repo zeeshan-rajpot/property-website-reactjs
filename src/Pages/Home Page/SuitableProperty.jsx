@@ -47,8 +47,21 @@ const SuitableProperty = () => {
           </Col>
         </Row>
       </Container>
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* mobile view */}
-      <div className='h1 mobilecard' style={{ paddingLeft: '5%', paddingRight: '5%' }}>
+      <div className='h1 mobilecard pb-5 pt-3' style={{ paddingLeft: '5%', paddingRight: '5%' }}>
         <h1
           style={{
             fontSize: '4.4vw',
@@ -94,7 +107,7 @@ const SuitableProperty = () => {
             style={{
               width: '100%',
               height: '110%',
-              borderRadius: '30px',
+              borderRadius: '17px',
             }}
           />
           <img
@@ -103,7 +116,7 @@ const SuitableProperty = () => {
             alt='img'
             style={{
               width: '100%',
-              borderRadius: '30px',
+              borderRadius: '17px',
               height: '110%',
             }}
           />
@@ -112,7 +125,7 @@ const SuitableProperty = () => {
                          className='shadow mt-4'
             alt='img'
             style={{
-              borderRadius: '30px',
+              borderRadius: '17px',
               width: '100%',
               height: '110%',
             }}
@@ -124,7 +137,7 @@ const SuitableProperty = () => {
             style={{
               width: '100%',
               height: '110%',
-              borderRadius: '30px',
+              borderRadius: '17px',
             }}
           />
           <img
@@ -133,7 +146,7 @@ const SuitableProperty = () => {
             alt='img'
             style={{
               width: '100%',
-              borderRadius: '30px',
+              borderRadius: '17px',
               height: '110%',
             }}
           />
@@ -142,7 +155,7 @@ const SuitableProperty = () => {
             className='shadow mt-4'
             alt='img'
             style={{
-              borderRadius: '30px',
+              borderRadius: '17px',
               width: '100%',
               height: '110%',
             }}
@@ -163,11 +176,11 @@ const SuitableProperty = () => {
               cursor: 'pointer',
               color: '#fc780c',
               fontFamily: 'Arial',
-              fontSize: '15px',
+              fontSize: '12px',
               padding: '5px 20px',
               textDecoration: 'none',
               textShadow: '0px 1px 0px #fc780c',
-              width: '70%',
+              width: '48%',
             }}
           >
             Find Out More

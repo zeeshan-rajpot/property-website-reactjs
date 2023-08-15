@@ -173,15 +173,15 @@ const SearchSection = () => {
 
 
       <br />
-      <br /><br /><br /><br />
+      <br /><br />
 
       {/* Serarch bar for mobile  */}
 
 
-      <Container>
-        <h1> Search Your Ideal Property</h1>
+      <Container className="mobileblock">
+        <h4 style={{ fontWeight: '600', marginRight: '10px', paddingLeft: '10px', paddingBottom: '10px' }}> Search Your Ideal Property</h4>
       </Container>
-      <Container style={{ width: '95%' }} className="shadow rounded pt-3 pb-5 mobileblock">
+      <Container style={{ width: '93%', borderRadius: '31px' }} className="shadow  pt-3 pb-5 mobileblock">
 
         <Row style={{}}>
 
@@ -197,7 +197,7 @@ const SearchSection = () => {
               <input
                 type="text"
                 placeholder="City, Community "
-                className='input-with-icon'
+                className='input-with-icon text-secondary'
                 style={{
                   paddingLeft: '42px',
                   backgroundColor: '#fff !important',
@@ -227,7 +227,7 @@ const SearchSection = () => {
               }}
             >
               <select
-                className='input-with-icon'
+                className='input-with-icon text-secondary'
                 style={{
                   paddingLeft: '26px',
                   backgroundColor: '#fff !important',
@@ -247,7 +247,7 @@ const SearchSection = () => {
 
 
           <Row>
-            <Col className="d-flex borderRightHieght" style={{paddingRight:'9px'}}>
+            <Col className="d-flex borderRightHieght " style={{ paddingRight: '9px' }}>
 
 
 
@@ -263,7 +263,7 @@ const SearchSection = () => {
                 <input
                   type="text"
                   placeholder="Beach, Chiller Free "
-                  className='input-with-icon'
+                  className='input-with-icon text-secondary'
                   style={{
                     paddingLeft: '42px',
                     backgroundColor: '#fff !important',
@@ -286,7 +286,7 @@ const SearchSection = () => {
                 }}
               >
                 <select
-                  className='input-with-icon'
+                  className='input-with-icon text-secondary'
                   style={{
                     paddingLeft: '42px',
                     backgroundColor: '#fff !important',
@@ -316,7 +316,7 @@ const SearchSection = () => {
                 }}
               >
                 <select
-                  className='input-with-icon'
+                  className='input-with-icon text-secondary'
                   style={{
                     paddingLeft: '42px',
                     backgroundColor: '#fff !important',
@@ -341,7 +341,7 @@ const SearchSection = () => {
 
               >
                 <select
-                  className='input-with-icon'
+                  className='input-with-icon text-secondary'
                   style={{
                     paddingLeft: '42px',
                     backgroundColor: '#fff !important',
@@ -367,7 +367,7 @@ const SearchSection = () => {
 
         </Row>
         <Row>
-          <Col className="borderRightHieght">
+          <Col className="borderRightHieght pe-0 ">
 
             <div
               className='input-container'
@@ -378,14 +378,17 @@ const SearchSection = () => {
               }}
             >
               <select
-                className='input-with-icon'
+                className='input-with-icon  text-secondary'
                 style={{
                   paddingLeft: '42px',
                   backgroundColor: '#fff !important',
                   outline: 'none',
                 }}
+
               >
-                <option value=''>Area (sqft)</option>
+                <option className="text-secondary" value=''  >
+                  Area (sqft)
+                </option>
                 <option value='option1'>Option 1</option>
                 <option value='option2'>Option 2</option>
               </select>
@@ -405,7 +408,7 @@ const SearchSection = () => {
               }}
             >
               <select
-                className='input-with-icon'
+                className='input-with-icon text-secondary'
                 style={{
                   paddingLeft: '42px',
                   backgroundColor: '#fff !important',
@@ -430,7 +433,7 @@ const SearchSection = () => {
             xs={6}
             md={2}
             className="col-full-height justify-content-center text-center  rem2 searchbtn"
-            style={{ textAlign: 'center', fontSize: '17px' }}
+            style={{ textAlign: 'center', fontSize: '15px' }}
           >
             Search
           </Col>

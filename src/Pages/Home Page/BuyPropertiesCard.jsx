@@ -32,10 +32,10 @@ const BuyPropertiesCard = () => {
             <p className="text-secondary" style={{ fontSize: "2rem" }}>New properties for Buy</p>
           </Col>
         </Row>
-        <Carousel cols={3} rows={1} gap={3} loop>
+        {/* <Carousel cols={3} rows={1} gap={3} loop>
           {properties.map((property) => (
             <Carousel.Item key={property.id}>
-              {/* Use Link to navigate to the detail page for each property */}
+        
               <Link to={`/DetailPage/${property._id}`}>
                 <Cards
                   path={property.propertyImages[0]}
@@ -48,7 +48,8 @@ const BuyPropertiesCard = () => {
               </Link>
             </Carousel.Item>
           ))}
-        </Carousel>
+        </Carousel> */}
+        <Cards/>
       </Container>
     </>
   );

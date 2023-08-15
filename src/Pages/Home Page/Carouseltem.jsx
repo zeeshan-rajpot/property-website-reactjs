@@ -38,23 +38,25 @@ const Cards = (props) => {
               </Card.Body>
             </Card>
 
+{/* mobile property  card */}
 
-            <Card className="shadow mobilecard" style={{ overflow: "hidden", borderTopLeftRadius: '38px', borderTopRightRadius: '38px' }}>
-              <Card.Img height='300px' variant="top" src={props.path} className="border" style={{ borderBottomLeftRadius: '40px', borderBottomRightRadius: '40px' }} />
+
+            <Card className="shadow mobilecard" style={{ overflow: "hidden", borderTopLeftRadius: '38px', borderTopRightRadius: '38px' ,borderBottomLeftRadius:'20px' ,borderBottomRightRadius:'20px' }}>
+              <Card.Img height='300px' variant="top" src='https://img.freepik.com/premium-photo/building-with-lot-windows-sign-that-says-t-v_878402-3342.jpg?size=626&ext=jpg&ga=GA1.2.713563129.1684747096&semt=ais' className="border" style={{ borderBottomLeftRadius: '40px', borderBottomRightRadius: '40px' }} />
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
                 <div className="d-flex" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
                   <span className="h1" style={{ fontSize: "20px", color: '#ec6337' }}>
-                    {props.price} AED/year
+                    1 AED/year
                   </span>
                   {/* <button href="#" class="houseorapt" >House</button> */}
                   <span className="text-secondary rem2" >Dubai</span>
                 </div>
                 <span style={{ fontSize: "16px" }}>
-                  <img src={roomicon} alt="" srcset="" /> <span className="text-secondary"> {props.room}</span>
+                  <img src={roomicon} alt="" srcset="" /> <span className="text-secondary"> 1</span>
                 </span>
                 <span style={{ fontSize: "16px", marginLeft: '20px' }}>
-                  <img src={bedicon} alt="" srcset="" /> <span className="text-secondary"> {props.bath}</span>
+                  <img src={bedicon} alt="" srcset="" /> <span className="text-secondary"> 1</span>
                 </span>
                 <div>       
                   <br />

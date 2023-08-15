@@ -165,7 +165,7 @@ const BottomBarNavigation = () => {
           onClick={() => handleMenuItemClick('home')}
         >
           <div className='menu-item__icon'>
-            <img src={HomeIcon} alt='Home' style={{ width: '14px' }} />
+            <img src={HomeIcon} alt='Home' style={{ width: '18px' }} />
           </div>
           {activeTab === 'home' ? (
             <div className='menu-item__text'>Home</div>
@@ -177,7 +177,7 @@ const BottomBarNavigation = () => {
           onClick={() => handleMenuItemClick('likes')}
         >
           <div className='menu-item__icon'>
-            <img src={InpropIcon} alt='Inprop' style={{ width: '14px' }} />
+            <img src={InpropIcon} alt='Inprop' style={{ width: '18px' }} />
           </div>
           {activeTab === 'likes' ? (
             <div className='menu-item__text'>Properties</div>
@@ -191,7 +191,7 @@ const BottomBarNavigation = () => {
           onClick={() => handleMenuItemClick('search')}
         >
           <div className='menu-item__icon'>
-            <img src={MenuIcon} alt='Project' style={{ width: '14px' }} />
+            <img src={MenuIcon} alt='Project' style={{ width: '18px' }} />
           </div>
           {activeTab === 'search' ? (
             <div className='menu-item__text'>Inprop</div>
@@ -205,7 +205,7 @@ const BottomBarNavigation = () => {
           onClick={() => handleMenuItemClick('profile')}
         >
           <div className='menu-item__icon'>
-            <img src={ProjectIcon} alt='Menu' style={{ width: '14px' }} />
+            <img src={ProjectIcon} alt='Menu' style={{ width: '18px' }} />
           </div>
           {activeTab === 'profile' ? (
             <div className='menu-item__text'>Menu</div>
@@ -231,7 +231,7 @@ const BottomBarNavigation = () => {
           }
         >
           <div className='menu-item__icon'>
-            <img src={ProjectIcon} alt='Menu' style={{ width: '14px' }} />
+            <img src={ProjectIcon} alt='Menu' style={{ width: '18px' }} />
           </div>
           {activeTab === 'profile' ? (
             <div className='menu-item__text'>Menu</div>

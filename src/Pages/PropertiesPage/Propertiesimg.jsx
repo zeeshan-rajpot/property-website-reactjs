@@ -2,16 +2,57 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./PropertiesImg.css";
 
-import img4 from "../../images/r-architecture-Cn87TISYij8-unsplash.svg";
-import img5 from "../../images/r-architecture-wDDfbanbhl8-unsplash.svg";
 import ExampleImg from "./Example";
 
 const Propertiesimg = () => {
   return (
-    <Container style={{ marginTop: "12vh" }}>
+  
+<>
+  
+  
+  <Container style={{ marginTop: "12vh" }} className="dektopview">
       <Row>
         <Col>
-          <h3 className="rem3">Discover Your Best <span style={{ color: '#EC6337' }}> House Here </span></h3>
+        <h1
+      className='mt-4 '
+      style={{
+        fontSize: '2vw',
+        background: 'linear-gradient(to right, #fff,#d1d9db)',
+        padding: '10px',
+        color: 'black',
+        width: '35%',
+        borderRadius: '22px',
+        marginLeft: '10px',
+      }}
+    >
+      Discover Your Best
+      <span
+        style={{
+          color: 'rgb(252, 120, 11)',
+        }}
+      >
+        {' '}
+        House
+      </span>{' '}
+      Here
+    </h1>
+
+    
+<p
+        className='my-0'
+        style={{
+          textAlign: 'left',
+          fontSize: '1.3vw',
+          color: '#c7c7c7',
+          marginRight: '54px',
+          marginLeft: '20px',
+          marginBottom:'20px'
+        }}
+      >
+        Text fill up rooms perfect for laid-back meet-ups to corporate
+        boardrooms made for wowing potential clients. We’ve got your meeting
+        room hire needs covered
+      </p>
         </Col>
       </Row>
       {/*       
@@ -98,6 +139,291 @@ const Propertiesimg = () => {
 
 
     </Container>
+
+{/* mobile view */}
+<div  className="mobileblock" style={{marginTop:'190px'}}>
+<h1
+      className='mt-4 '
+      style={{
+        fontSize: '4vw',
+        background: 'linear-gradient(to right, #fff,#d1d9db)',
+        padding: '10px',
+        color: 'black',
+        width: '62%',
+        borderRadius: '22px',
+        marginLeft: '10px',
+      }}
+    >
+      Discover Your Best
+      <span
+        style={{
+          color: 'rgb(252, 120, 11)',
+        }}
+      >
+        {' '}
+        House
+      </span>{' '}
+      Here
+    </h1>
+<p
+        className='my-0'
+        style={{
+          textAlign: 'left',
+          fontSize: '2.6vw',
+          color: '#c7c7c7',
+          marginRight: '54px',
+          marginLeft: '20px',
+        }}
+      >
+        Text fill up rooms perfect for laid-back meet-ups to corporate
+        boardrooms made for wowing potential clients. We’ve got your meeting
+        room hire needs covered
+      </p>
+    <div
+      style={{ display: 'flex', justifyContent: 'center', marginTop: '5px' }}
+    >
+      <div
+        style={{
+          height: '155px',
+          flex: 1,
+          paddingRight: '2px',
+          marginLeft: '20px',
+        }}
+      >
+        <img
+          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          alt='Image 1'
+          style={{
+            width: '100%',
+            height: '70px',
+            objectFit: 'cover',
+            borderRadius: '15px 0 0 15px',
+
+            
+          }}
+        />
+
+        <h1
+          className='mt-4'
+          style={{
+            fontSize: '1.5vw',
+            background:
+              'linear-gradient(to right, rgb(165 165 165 / 52%), rgb(153 153 153 / 52%))',
+            padding: '7px',
+            color: '#fff',
+            width: '66px',
+            borderRadius: '0px 15px 15px',
+            backdropFilter: 'blur(10px)',
+            position: 'relative',
+            height: '20px',
+
+            transform: 'translateY(-36px) translateX(0px)',
+            margin: '0',
+            marginBottom:'4px'
+          }}
+        >
+          Penthouses
+          <span
+            style={{
+              position: 'absolute',
+              right: '12px',
+              fontSize: '1.5vw',
+            }}
+          >
+            13
+          </span>
+        </h1>
+        <div style={{ position: 'relative', display: 'inline-block' }}>
+          <img
+            src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+            alt='Image 2'
+            style={{
+              width: '100%',
+              height: '70px',
+              marginTop: '-36px',
+              objectFit: 'cover',
+              borderRadius: '15px 0 0 15px',
+            }}
+          />
+          <div
+            style={{
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              padding: '4px 27px 3px 3px',
+              color: 'white',
+              borderTopRightRadius: '15px',
+              borderBottomRightRadius: '15px',
+              marginTop:'20px'
+            }}
+          >
+            <h1
+              className='mt-4 mb-4'
+              style={{
+                fontSize: '1.5vw',
+                background:
+                  'linear-gradient(to right, rgb(165 165 165 / 52%), rgb(153 153 153 / 52%))',
+                padding: '6px 0px 0px 0px',
+                color: '#fff',
+                width: '66px',
+                borderRadius: '0px 15px 15px',
+                backdropFilter: 'blur(10px)',
+                position: 'relative',
+                height: '20px',
+
+                transform: 'translateY(19px) translateX(-3px)',
+              }}
+            >
+              Penthouses
+              <span
+                style={{
+                  position: 'absolute',
+                  right: '12px',
+                  fontSize: '1.5vw',
+                }}
+              >
+                13
+              </span>
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          flex: 2,
+          // padding: '0 5px',
+          display: 'block',
+          // marginLeft: '52px',
+          height: '155px',
+        }}
+      >
+        <img
+          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          alt='Image 3'
+          style={{
+            width: '87%',
+            // height: 'auto',
+            margin: '0 auto',
+            objectFit: 'cover',
+            height:'143px',
+            borderRadius:'12px'
+          }}
+        />
+        <h1
+          className='mt-4 mb-4'
+          style={{
+            fontSize: '1.5vw',
+            background:
+              'linear-gradient(to right, rgb(165 165 165 / 52%), rgb(153 153 153 / 52%))',
+            padding: '7px',
+            color: '#fff',
+            width: '66px',
+            borderRadius: '0px 15px 15px',
+            backdropFilter: 'blur(10px)',
+            position: 'relative',
+            height: '20px',
+
+            transform: 'translateY(-36px) translateX(0px)',
+          }}
+        >
+          Penthouses
+          <span
+            style={{
+              position: 'absolute',
+              right: '12px',
+              fontSize: '1.5vw',
+            }}
+          >
+            13
+          </span>
+        </h1>
+      </div>
+
+      <div style={{ height: '155px', flex: 1, paddingRight: '5px' }}>
+        <img
+          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          alt='Image 1'
+          style={{
+            width: '100%',
+            height: '70px',
+            objectFit: 'cover',
+            borderRadius: '0 15px 15px 0px',
+            marginLeft: '-21px',
+            marginBottom:'10px'
+          }}
+        />
+        <h1
+          className='mt-4 '
+          style={{
+            fontSize: '1.5vw',
+            background:
+              'linear-gradient(to right, rgb(165 165 165 / 52%), rgb(153 153 153 / 52%))',
+            padding: '7px',
+            color: '#fff',
+            width: '66px',
+            borderRadius: '0px 15px 15px 0px',
+            backdropFilter: 'blur(10px)',
+            position: 'relative',
+            height: '20px',
+
+            transform: 'translateY(-44px) translateX(-22px)',
+          }}
+        >
+          Penthouses
+          <span
+            style={{
+              position: 'absolute',
+              right: '12px',
+              fontSize: '1.5vw',
+            }}
+          >
+            13
+          </span>
+        </h1>
+        <img
+          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          alt='Image 2'
+          style={{
+            width: '100%',
+            height: '70px',
+            marginTop: '-46px',
+            objectFit: 'cover',
+            borderRadius: '0 15px 15px 0px',
+            marginLeft: '-21px',
+          }}
+        />
+        <h1
+          className='mt-4 mb-4'
+          style={{
+            fontSize: '1.5vw',
+            background:
+              'linear-gradient(to right, rgb(165 165 165 / 52%), rgb(153 153 153 / 52%))',
+            padding: '7px',
+            color: '#fff',
+            width: '66px',
+            borderRadius: '0px 15px 15px 0px',
+            backdropFilter: 'blur(10px)',
+            position: 'relative',
+            height: '20px',
+
+            transform: 'translateY(-36px) translateX(-22px)',
+          }}
+        >
+          Penthouses
+          <span
+            style={{
+              position: 'absolute',
+              right: '12px',
+              fontSize: '1.5vw',
+            }}
+          >
+            13
+          </span>
+        </h1>
+      </div>
+    </div>
+    </div>
+</>
   );
 };
 

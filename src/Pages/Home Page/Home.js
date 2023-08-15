@@ -15,6 +15,7 @@ import HomeSearchSection from "./HomeSearchSection";
 import Footer from "../../Common/Footer";
 import BottomBar from "../../Common/BottomNavBar";
 import Featured from "./Featured";
+import MobileFooter from "../../Common/MobileFooter";
 
 
 const Home = () => {
@@ -41,6 +42,7 @@ const Home = () => {
       
    
       <Footer />
+      <MobileFooter/>
     </>
   );
 };

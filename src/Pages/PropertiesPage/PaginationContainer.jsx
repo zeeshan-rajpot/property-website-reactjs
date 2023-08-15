@@ -1,5 +1,5 @@
 import React from 'react'
-import Pagination from './Pagination'
+import CustomPagination from './Pagination'
 import { Col, Container, Row } from 'react-bootstrap'
 const PaginationContainer = () => {
   return (
@@ -8,7 +8,7 @@ const PaginationContainer = () => {
         <Container className='shadow pt-3 pb-3 rounded' >
             <Row style={{borderRadius:'20px'}}>
                 <Col>
-                <Pagination/>
+                <CustomPagination/>
                 </Col>
             </Row>
         </Container>

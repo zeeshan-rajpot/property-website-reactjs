@@ -16,6 +16,7 @@ import logo from "../../images/Image 11.png";
 
 import Footer from "../../Common/Footer";
 import Navbars from "../../Common/NavBar";
+import MobileFooter from "../../Common/MobileFooter";
 
 import Signupdropdownbtn from "./Signupdropdownbtn";
 import './Modals.css'
@@ -213,6 +214,7 @@ function Signup() {
         </Row>
       </Container>
       <Footer />
+      <MobileFooter/>
     </>
   );
 }

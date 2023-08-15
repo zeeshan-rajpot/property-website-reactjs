@@ -97,9 +97,11 @@ const Account = () => {
       <TextField label="Email" variant="outlined" fullWidth value={updatedEmail} onChange={handleEmailChange} />
       <br />
       <br />
-      <Button variant="contained" color="primary" onClick={handleUpdateSubmit}>
-        Update
-      </Button>
+      <div style={{textAlign:'center'}}>
+    <button className='Update' onClick={handleUpdateSubmit}>
+Update
+    </button>
+    </div>
     </>
   );
 };

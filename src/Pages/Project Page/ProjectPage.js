@@ -6,6 +6,7 @@ import NewProject from "../Project Page/NewProject";
 import ProjectCard from "../Project Page/ProjectCard";
 import axios from "axios"; // Import Axios
 import { baseurl } from "../Const";
+import MobileFooter from "../../Common/MobileFooter";
 
 // import houseimg from "../../images/jarek-ceborski-jn7uVeCdf6U-unsplash.png";
 import BottomBar from "../../Common/BottomNavBar";
@@ -46,6 +47,7 @@ const ProjectPage = () => {
         />
       ))}
       <Footer />
+      <MobileFooter/>
     </>
   );
 };

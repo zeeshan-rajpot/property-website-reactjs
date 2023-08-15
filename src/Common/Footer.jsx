@@ -8,7 +8,7 @@ import twitter from '../images/twitter.svg'
 
 export default function Footer() {
   return (
-    <div bgColor="light" className="text-center text-lg-start text-muted">
+    <div bgColor="light" className="text-center text-lg-start text-muted dektopview">
       
 
       <section className="bgimage">

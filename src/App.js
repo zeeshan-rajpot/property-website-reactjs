@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import "primereact/resources/themes/lara-light-indigo/theme.css";     
@@ -15,11 +15,23 @@ import SignupQ from './Pages/Sign up/SignupQ';
 import ProjectPage from './Pages/Project Page/ProjectPage';
 import Investor from './Pages/Sign up/Investor';
 import Uploadproperty from './Pages/UploadProperty/Uploadproperty';
+import SplashLoader from './Pages/SplashLoader';
 import Navbars from './Common/NavBar';
 import BottomBar from './Common/BottomNavBar';
 import Inprop from './Pages/InpropPage/Inprop';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Set the duration in milliseconds
+  }, []);
+
+  if (loading) {
+    return <SplashLoader />;
+  }
   return (
     <BrowserRouter>
       <>

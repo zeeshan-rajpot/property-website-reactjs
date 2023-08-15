@@ -55,7 +55,7 @@ const HeroSection = () => {
           paddingRight: '5%',
         }}
       >
-        <div>
+        <div style={{marginTop:'17px'}}>
           <h1
             style={{
               fontSize: '4.6vw',
@@ -73,7 +73,7 @@ const HeroSection = () => {
             Lorem, ipsum dolor sit amet  consectetur <br /> adipisicing elit.
             Eveniet
             laborum, ipsa <br /> ea illo
-            cum minus vero labore     <br />  cupiditate
+            cum minus vero labore     cupiditate <br /> 
             molestiae
           </p>
           <button
@@ -83,7 +83,7 @@ const HeroSection = () => {
               border: '1px solid #fc780c',
               cursor: 'pointer',
               color: '#fc780c',
-              fontFamily: 'Arial',
+            
               fontSize: '10px',
               padding: '5px 10px',
               textDecoration: 'none',
@@ -91,7 +91,7 @@ const HeroSection = () => {
               width: '60%',
             }}
           >
-            Find Out More
+            View Deals
           </button>
         </div>
         <div
@@ -101,7 +101,7 @@ const HeroSection = () => {
         >
           <img
             style={{
-              width: '59vw',
+              width: '54vw',
               position: 'absolute',
               // height: '200%',
               right: '0',

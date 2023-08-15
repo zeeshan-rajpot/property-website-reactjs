@@ -13,6 +13,7 @@ import GmailIcon from "../../images/gmailicon.svg";
 import Footer from "../../Common/Footer";
 import BottomBar from "../../Common/BottomNavBar";
 import { baseurl } from "../Const";
+import MobileFooter from "../../Common/MobileFooter";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -111,6 +112,7 @@ const Login = () => {
         </Row>
       </Container>
       <Footer />
+      <MobileFooter/>
     </>
   );
 };

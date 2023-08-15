@@ -9,6 +9,7 @@ import Associatefootertext from './Associatefootertext'
 import Navbars from '../../Common/NavBar'
 import Footer from '../../Common/Footer'
 import BottomBar from '../../Common/BottomNavBar'
+import MobileFooter from '../../Common/MobileFooter'
 
 
 
@@ -22,6 +23,7 @@ const Acosites = () => {
 <ProjectCard/> */}
 <Associatefootertext/>
 <Footer/>
+<MobileFooter/>
     </>
   )
 }

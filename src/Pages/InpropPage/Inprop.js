@@ -1,13 +1,13 @@
 import React from 'react'
+import Tabbtn from './Tabbar'
+import { Container } from 'react-bootstrap'
 
 const Inprop = () => {
   return (
    <>
-   
-   <h1>
-
-    Inprop Page is coming Soon
-   </h1>
+   <Container>
+ <Tabbtn/>
+ </Container>
    </>
   )
 }
