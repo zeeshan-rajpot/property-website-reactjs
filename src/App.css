@@ -81,7 +81,38 @@ input::placeholder {
 
 
 
+.Property {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  background-color: #fff;
+  margin-left: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+.data h6 {
+  font-size: 2.5vw;
+}
+.data p {
+  font-size: 1.8vw;
+}
+.data span {
+  font-size: 2.8vw;
+}
+.data {
+  margin-left: 10px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.data div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px; /* Adjust as needed */
+}
 
 
 

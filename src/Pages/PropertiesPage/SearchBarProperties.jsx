@@ -12,7 +12,7 @@ import fillter from '../../images/funnel-icon.svg'
 const SearchBarProperties = () => {
   return (
     <>
-    <div className="" style={{minWidth:'90vw' ,marginRight:'5vw'}}>
+    <div className="" style={{minWidth:'100VW' }}>
       <Container className="SearchBarProperties shadow dektopview " style={{paddingLeft:'30px'}}> 
         <Row>
           <Col lg={2} sm={6} className="searchbarcolflex d-flex">

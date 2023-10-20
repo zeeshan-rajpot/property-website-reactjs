@@ -179,7 +179,7 @@ const SuitableProperty = () => {
               fontSize: '12px',
               padding: '5px 20px',
               textDecoration: 'none',
-              textShadow: '0px 1px 0px #fc780c',
+              // textShadow: '0px 1px 0px #fc780c',
               width: '48%',
             }}
           >

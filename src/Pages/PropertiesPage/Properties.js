@@ -32,7 +32,7 @@ const Properties = () => {
           <h1
                     className='mt-4 '
                     style={{
-                        fontSize: '2vw',
+                        fontSize: '20px',
                         background: 'linear-gradient(to right, #fff,#d1d9db)',
                         padding: '10px',
                         color: 'black',
@@ -53,7 +53,7 @@ const Properties = () => {
                     <span
                         style={{
                             color: 'rgb(252, 120, 11)',
-                            fontSize: '2vw',
+                            fontSize: '20px',
                             paddingLeft: '14px',
                             marginTop: '4px',
                         }}
@@ -61,32 +61,17 @@ const Properties = () => {
                         (3378 results)
                     </span>
                 </h1>
-                <p className='text-secondary my-0' style={{ marginLeft: '15px', fontSize: '20px', marginRight: '26px' }}> Text fill up rooms perfect for laid-back meet-ups to corporate boardrooms
+                <p className='text-secondary my-0' style={{ marginLeft: '15px', fontSize: '15px', marginRight: '26px' }}> Text fill up rooms perfect for laid-back meet-ups to corporate boardrooms
                     made for wowing potential clients.</p>
           </Col>
 
         </Row>
       </Container>
-      <div className="desktop-properties">
-        {properties.map((property) => (
-          // <Link to={`/DetailPage/${property._id}`} key={property._id}>
-          <PropCard
-            id={property._id}
-            image={property.propertyImages[0]}
-            title={property.title}
-            price={property.price}
-            timetolist={property.timetolist}
-            bedroom={property.bedroom}
-            bathroom={property.bathroom}
-            area={property.area}
-            location={property.address}
-          />
-          // </Link>
-        ))}
       </div>
+ 
 
 
-      </div>
+      
 
       {/* MobilePropertyCard will be shown only on mobile view */}
 <div className='mobileblock'>
@@ -124,11 +109,31 @@ const Properties = () => {
                 </h1>
                 <p className='text-secondary my-0' style={{ marginLeft: '15px', fontSize: '2.6vw', marginRight: '26px' }}> Text fill up rooms perfect for laid-back meet-ups to corporate boardrooms
                     made for wowing potential clients.</p>
-     <MobilePropertyCard/>
-     <MobilePropertyCard/>
-     <MobilePropertyCard/>
-     <MobilePropertyCard/>
+     {/* <MobilePropertyCard/> */}
+     {/* <MobilePropertyCard/> */}
+     {/* <MobilePropertyCard/> */}
+     {/* <MobilePropertyCard/> */}
      </div>
+
+
+
+     <div className="">
+        {properties.map((property) => (
+          // <Link to={`/DetailPage/${property._id}`} key={property._id}>
+          <PropCard
+            id={property._id}
+            image={property.propertyImages[0]}
+            title={property.title}
+            price={property.price}
+            timetolist={property.timetolist}
+            bedroom={property.bedroom}
+            bathroom={property.bathroom}
+            area={property.area}
+            location={property.address}
+          />
+          // </Link>
+        ))}
+      </div>
     </>
   );
 };

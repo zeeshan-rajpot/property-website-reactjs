@@ -87,7 +87,7 @@ const HeroSection = () => {
               fontSize: '10px',
               padding: '5px 10px',
               textDecoration: 'none',
-              textShadow: '0px 1px 0px #fc780c',
+              // textShadow: '0px 1px 0px #fc780c',
               width: '60%',
             }}
           >

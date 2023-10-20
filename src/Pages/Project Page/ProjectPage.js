@@ -8,6 +8,12 @@ import axios from "axios"; // Import Axios
 import { baseurl } from "../Const";
 import MobileFooter from "../../Common/MobileFooter";
 
+import bedicon from '../../images/bedicon.svg';
+import broom from '../../images/broom.svg';
+import broom2 from '../../images/broom.svg';
+import map from '../../images/Capture.svg';
+import location from "../../images/location.svg";
+
 // import houseimg from "../../images/jarek-ceborski-jn7uVeCdf6U-unsplash.png";
 import BottomBar from "../../Common/BottomNavBar";
 
@@ -47,6 +53,14 @@ const ProjectPage = () => {
         />
       ))}
       <Footer />
+
+
+
+    
+
+
+
+
       <MobileFooter/>
     </>
   );

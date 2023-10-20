@@ -11,9 +11,16 @@ const Cards = (props) => {
   return (
     <div>
       <Container>
-        <Row >
-          <Col >
-            <Card  className="border desktopcard" style={{ overflow: "hidden" , borderTopLeftRadius:'38px' , borderTopRightRadius:'38px' }}>
+        <Row>
+          <Col>
+            <Card
+              className="border desktopcard"
+              style={{
+                overflow: "hidden",
+                borderTopLeftRadius: "38px",
+                borderTopRightRadius: "38px",
+              }}
+            >
               <Card.Img
                 variant="top"
                 src={props.path}
@@ -21,62 +28,102 @@ const Cards = (props) => {
               />
               <Card.Body>
                 <Card.Title>
-                  <div className="d-flex" style={{alignItems:'center' , justifyContent:'space-between'}}>
-                  <span className="h1" style={{ fontSize: "20px" , color:'#ec6337'}}>
-                   {props.price} AED/year
-                  </span>
-                  <button href="#" class="houseorapt text-secondary" >House</button>
+                  <div
+                    className="d-flex"
+                    style={{
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <span
+                      className="h1"
+                      style={{ fontSize: "20px", color: "#ec6337" }}
+                    >
+                      {props.price} AED/year
+                    </span>
+                    <button href="#" class="houseorapt text-secondary">
+                      House
+                    </button>
                   </div>
                 </Card.Title>
-                <Card.Text> <span className="text-secondary">{props.location}</span></Card.Text>
+                <Card.Text>
+                  {" "}
+                  <span className="text-secondary">{props.location}</span>
+                </Card.Text>
                 <span style={{ fontSize: "16px" }}>
-                  <img src={roomicon} alt="" srcset="" /> <span className="text-secondary"> {props.room}</span>
+                  <img src={roomicon} alt="" srcset="" />{" "}
+                  <span className="text-secondary"> {props.room}</span>
                 </span>
-                <span style={{ fontSize: "16px" , marginLeft:'20px' }}>
-                  <img src={bedicon} alt="" srcset="" /> <span className="text-secondary"> {props.bath}</span>
+                <span style={{ fontSize: "16px", marginLeft: "20px" }}>
+                  <img src={bedicon} alt="" srcset="" />{" "}
+                  <span className="text-secondary"> {props.bath}</span>
                 </span>
               </Card.Body>
             </Card>
 
-{/* mobile property  card */}
+            {/* mobile property  card */}
 
-
-            <Card className="shadow mobilecard" style={{ overflow: "hidden", borderTopLeftRadius: '38px', borderTopRightRadius: '38px' ,borderBottomLeftRadius:'20px' ,borderBottomRightRadius:'20px' }}>
-              <Card.Img height='300px' variant="top" src='https://img.freepik.com/premium-photo/building-with-lot-windows-sign-that-says-t-v_878402-3342.jpg?size=626&ext=jpg&ga=GA1.2.713563129.1684747096&semt=ais' className="border" style={{ borderBottomLeftRadius: '40px', borderBottomRightRadius: '40px' }} />
+            <Card
+              className="shadow mobilecard"
+              style={{
+                overflow: "hidden",
+                borderTopLeftRadius: "38px",
+                borderTopRightRadius: "38px",
+                borderBottomLeftRadius: "20px",
+                borderBottomRightRadius: "20px",
+              }}
+            >
+              <Card.Img
+                height="300px"
+                variant="top"
+                src={props.path}
+                className="border"
+                style={{
+                  borderBottomLeftRadius: "40px",
+                  borderBottomRightRadius: "40px",
+                }}
+              />
               <Card.Body>
                 {/* <Card.Title>Card Title</Card.Title> */}
-                <div className="d-flex" style={{ alignItems: 'center', justifyContent: 'space-between' }}>
-                  <span className="h1" style={{ fontSize: "20px", color: '#ec6337' }}>
-                    1 AED/year
+                <div
+                  className="d-flex"
+                  style={{
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                  }}
+                >
+                  <span
+                    className="h1"
+                    style={{ fontSize: "20px", color: "#ec6337" }}
+                  >
+                   {props.price} AED/year
                   </span>
                   {/* <button href="#" class="houseorapt" >House</button> */}
-                  <span className="text-secondary rem2" >Dubai</span>
+                  <span className="text-secondary rem2">{props.location}</span>
                 </div>
                 <span style={{ fontSize: "16px" }}>
-                  <img src={roomicon} alt="" srcset="" /> <span className="text-secondary"> 1</span>
+                  <img src={roomicon} alt="" srcset="" />{" "}
+                  <span className="text-secondary"> {props.room}</span>
                 </span>
-                <span style={{ fontSize: "16px", marginLeft: '20px' }}>
-                  <img src={bedicon} alt="" srcset="" /> <span className="text-secondary"> 1</span>
+                <span style={{ fontSize: "16px", marginLeft: "20px" }}>
+                  <img src={bedicon} alt="" srcset="" />{" "}
+                  <span className="text-secondary"> {props.bath}</span>
                 </span>
-                <div>       
+                <div>
                   <br />
                   <br />
-                    <button href="#" class="houseorapt shadow" style={{width:'100%'}} >House</button>
-        <br /><br />
-        
-        
+                  <button
+                    href="#"
+                    class="houseorapt shadow"
+                    style={{ width: "100%" }}
+                  >
+                  House
+                  </button>
+                  <br />
+                  <br />
                 </div>
-
-
               </Card.Body>
             </Card>
-
-
-
-
-
-
-
           </Col>
         </Row>
       </Container>

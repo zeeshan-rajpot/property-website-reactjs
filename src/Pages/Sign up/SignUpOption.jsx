@@ -60,14 +60,24 @@ export const SignUpOption = ({ formData }) => {
       const receivedInvestorId = response.data._id; // Replace 'investorId' with the actual key used in the API response
 
       setInvestorId(receivedInvestorId); // Store the received ID in the state variable
+   
+      if (response.status === 200) {
+        if (userType === 'sourcer') {
+          handleSourceModalOpen();
+        } else if (userType === 'investor') {
+          handleInvestModalOpen()
+        }
+      }
+
     })
+    
     .catch(error => {
       // Handle errors if the API request fails
-      console.error('API Error:', error);
+      console.error('API Error:', error.response.data);
 
-      // Check if the error status code is 409 (Conflict)
+      navigate("/Signup");
       if (error.response && error.response.status === 409) {
-        alert('User already exists. Please use a different email.');
+        alert(JSON.stringify(error.response.data.message));
         // window.location.href = '/Signup';
         navigate("/Signup");
       }

@@ -18,9 +18,9 @@ const PropertiesPage = () => {
   return (
     <>
 
-      <AddProperty/>
+      {/* <AddProperty/> */}
       <PropertiesHero />
-      <div style={{position:'absolute' ,marginTop:'-19px'}}>
+      <div className="largescreen-margin" style={{position:'absolute' ,marginTop:'34px'}}>
       <SearchBarProperties />
       </div>
       <Propertiesimg />

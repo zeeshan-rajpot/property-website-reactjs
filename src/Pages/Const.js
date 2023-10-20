@@ -1,1 +1,1 @@
-export const baseurl = 'https://propertywebsite.azurewebsites.net';
+export const baseurl = 'https://inpropsite.azurewebsites.net/';

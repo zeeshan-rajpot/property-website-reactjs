@@ -16,7 +16,7 @@ const Propertiesimg = () => {
         <h1
       className='mt-4 '
       style={{
-        fontSize: '2vw',
+        fontSize: '20px',
         background: 'linear-gradient(to right, #fff,#d1d9db)',
         padding: '10px',
         color: 'black',
@@ -42,7 +42,7 @@ const Propertiesimg = () => {
         className='my-0'
         style={{
           textAlign: 'left',
-          fontSize: '1.3vw',
+          fontSize: '15px',
           color: '#c7c7c7',
           marginRight: '54px',
           marginLeft: '20px',
@@ -191,7 +191,7 @@ const Propertiesimg = () => {
         }}
       >
         <img
-          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          src='https://images.unsplash.com/photo-1610526662877-4d0382ea9a44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=289&q=80'
           alt='Image 1'
           style={{
             width: '100%',
@@ -235,7 +235,7 @@ const Propertiesimg = () => {
         </h1>
         <div style={{ position: 'relative', display: 'inline-block' }}>
           <img
-            src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+            src='https://images.unsplash.com/photo-1516069429726-51d80d545cbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=901&q=80'
             alt='Image 2'
             style={{
               width: '100%',
@@ -298,7 +298,7 @@ const Propertiesimg = () => {
         }}
       >
         <img
-          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          src='https://plus.unsplash.com/premium_photo-1678963248671-29ce42a16899?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=462&q=80'
           alt='Image 3'
           style={{
             width: '87%',
@@ -341,7 +341,7 @@ const Propertiesimg = () => {
 
       <div style={{ height: '155px', flex: 1, paddingRight: '5px' }}>
         <img
-          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          src='https://images.unsplash.com/photo-1445853583881-f3bb64d99025?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80yy'
           alt='Image 1'
           style={{
             width: '100%',
@@ -381,7 +381,7 @@ const Propertiesimg = () => {
           </span>
         </h1>
         <img
-          src='https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80'
+          src='https://images.unsplash.com/photo-1516069429726-51d80d545cbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=901&q=80'
           alt='Image 2'
           style={{
             width: '100%',
