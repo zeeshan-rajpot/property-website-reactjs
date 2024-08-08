@@ -1,0 +1,30 @@
+.bottomloginbtn {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border-radius:28px;
+	border:1px solid #fc770b;
+	display:inline-block;
+	cursor:pointer;
+	color:#fc770b;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px ;
+	text-decoration:none;
+    width: 92%;
+    text-align: center;
+}
+.bottombtnflat {
+	background:linear-gradient(to bottom, #ffffff 5%, #ffffff 100%);
+	background-color:#ffffff;
+	border:1px solid #fc770b;
+	display:inline-block;
+	cursor:pointer;
+	color:#fc770b;
+	font-family:Arial;
+	font-size:17px;
+	padding:5px ;
+	text-decoration:none;
+    width: 92%;
+    text-align: center;
+    margin-top:20px;
+}

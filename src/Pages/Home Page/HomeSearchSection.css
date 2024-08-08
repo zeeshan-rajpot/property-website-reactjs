@@ -1,0 +1,24 @@
+.bgimgchair{
+    background-image: url('../../images/Component\ 23\ –\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 65rem;
+    
+}
+@media only screen and (max-width: 600px) {
+
+    .bgimgchair{
+        background-image: none;
+
+    }
+  
+  }
+  .devider{
+    width: 60%;
+  }
+  .textflexserchsection{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+  }

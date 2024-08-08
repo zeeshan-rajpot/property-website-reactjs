@@ -1,0 +1,183 @@
+.custom-dropdown-button {
+  border: none; /* Remove the border */
+  border-bottom: 1px solid grey; /* Add the bottom border */
+  background-color: transparent; /* Remove the background color */
+}
+
+.dropdown-icon {
+  width: 20px; /* Adjust the width of the image */
+  margin-right: 5px; /* Add spacing between the image and text */
+}
+
+
+.flexsection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchcontainer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: auto;
+}
+.searchicon {
+  margin-left: 33px;
+  margin-top: 21px;
+  margin-right: 10px;
+  width: 21px;
+}
+.searchbarcolflex {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 42px;
+ 
+}
+
+.borderRightHieght{
+  position: relative;
+  /* background-color: #f0f0f0; */
+
+}
+
+.borderRightHieght::after {
+  content: "";
+  position: absolute;
+  top: 36%;
+  right: 0;
+  height: 50%;
+  border-right: 1px solid grey; /* Adjust the width and color as needed */
+}
+
+
+
+
+
+
+
+
+
+.input-container {
+  position: relative;
+  flex-grow: 1;
+}
+.input-with-icon {
+  border: none;
+  border-bottom: 1px solid #bcbcbc;
+  padding: 0px;
+  width: 100%;
+  height: 37px;
+  margin-top: 14px;
+  background: no-repeat;
+  font-size: 11px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1px;
+  bottom: 20%;
+  height: 31%;
+  padding-left: 0px;
+}
+.select option {
+  font-size: 10px !important;
+  color: #000 !important;
+  background-color: #fff !important;
+}
+.select option:active {
+  background-color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+  min-width: 65px !important;
+}
+.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+	min-width: 65px !important;
+  }
+  .marginmobile{
+    margin-top: 21px;
+    
+  }
+@media only screen and (max-width: 600px) {
+  .searchcontainer {
+    height: auto;
+  }
+  .searchbarcolflex{
+    padding-left: 20px !important;
+  }
+  .searchicon {
+    /* margin-left: 90px !important; */
+    margin-top: 21px;
+    margin-right: 10px;
+    width: 21px;
+  }
+  .marginmobile{
+    margin-left: 40px !important;
+    
+  }
+  .css-6yt8uy.css-6yt8uy.css-6yt8uy{
+    min-width: 152px !important;
+  }
+  .css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+	min-width: 152px !important;
+  }
+  .css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input.css-1ldywpb-MuiSelect-select-MuiInputBase-input-MuiInput-input{
+    min-width: 152px !important;
+  }
+  .css-13s481-MuiInputBase-root-MuiInput-root-MuiSelect-root{
+    max-width: 125px;
+  }
+}
+
+#dropdown-basic-button {
+  color: grey;
+  background: none;
+  border: none;
+  font-size: 15px;
+}
+.iconmargin {
+  margin-left: 20px;
+}
+.rentbuybtn {
+  border-radius: 0 55px 0 75px;
+  background-color: #ec6337;
+  color: white;
+}
+.searchbtn {
+  border-radius: 55px 0 75px 0;
+  background-color: #ec6337;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu .dropdown-item {
+  font-size: 18px; /* Change to desired font size */
+}
+
+@media only screen and (max-width: 1200px) {
+  .rentbuybtn {
+    border: none;
+    background-color: white;
+    display: block;
+  }
+  .searchbtn {
+    border-radius: 20px;
+    display: block;
+    margin-top: 20px;
+  }
+
+}
+ 

@@ -1,0 +1,158 @@
+
+
+section {
+   
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section>.main-container {
+  
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.main-container>.first-container {
+    grid-column: span 6;
+   
+}
+
+.main-container>.second-container {
+    grid-column: span 6;
+}
+
+.first-container>img {
+    width: 100%;
+    height: auto;
+}
+
+.second-container>h1 {
+    padding-top: 77px;
+    font-size: 60px;
+    /* font-weight: 700; */
+    color: #444444;
+    line-height: 83px;
+}
+
+.second-container>h1>span {
+    color: #EC6337;
+}
+
+.second-container>p {
+    font-size: 38px;
+    padding-top: 10px;
+    /* font-weight: 400; */
+    line-height: 65px;
+    color: #717171;
+}
+
+.second-container>button {
+    margin-top: 10px;
+    height: 70px;
+    width: 290px;
+    background-color: #EC6337;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1500px) {
+    .second-container>h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .second-container>p {
+        font-size: 32px;
+        line-height: 55px;
+    }
+
+    .second-container>button {
+        height: 60px;
+        width: 240px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .second-container>h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .second-container>p {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .second-container>button {
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    section>.main-container {
+        grid-template-columns: 1fr;
+    }
+
+    .main-container>.first-container,
+    .main-container>.second-container {
+        grid-column: span 12;
+        border: none;
+    }
+
+    .second-container>h1 {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .second-container>p {
+        font-size: 24px;
+        line-height: 40px;
+    }
+
+    .second-container>button {
+        height: 45px;
+        width: 180px;
+        font-size: 18px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .second-container>h1 {
+        font-size: 30px;
+        line-height: 45px;
+        padding-top: 50px;
+    }
+
+    .second-container>p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+      
+
+    .second-container>button {
+        height: 40px;
+        width: 160px;
+        font-size: 16px;
+    }
+}

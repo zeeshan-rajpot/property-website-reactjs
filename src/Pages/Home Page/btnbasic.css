@@ -1,0 +1,31 @@
+.p-button.p-highlight:not(:disabled):not(.p-button-secondary):not(.p-button-success):not(.p-button-info):not(.p-button-warning):not(.p-button-danger):hover,
+.p-button.p-highlight:not(:disabled):not(.p-button-secondary):not(.p-button-success):not(.p-button-info):not(.p-button-warning):not(.p-button-danger):focus,
+.p-button.p-highlight:not(:disabled):not(.p-button-secondary):not(.p-button-success):not(.p-button-info):not(.p-button-warning):not(.p-button-danger):active,
+.p-button.p-highlight:not(:disabled):not(.p-button-secondary):not(.p-button-success):not(.p-button-info):not(.p-button-warning):not(.p-button-danger).p-disabled:hover,
+.p-button.p-highlight:not(:disabled):not(.p-button-secondary):not(.p-button-success):not(.p-button-info):not(.p-button-warning):not(.p-button-danger).p-disabled:focus {
+    background-color: #EC6337 !important;
+    border: none;
+}
+.p-highlight{
+    background-color: #EC6337 !important;
+border: none;
+    margin-left: 10px;
+}
+.p-button{
+    padding: 8px 22px;
+    font-size: 1rem;
+    gap: 50px;
+margin-left: 10px;
+}
+.p-selectbutton .p-button.p-highlight{
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 2px;
+    font-size: 17px;
+   
+
+}
+.p-selectbutton .p-buttonset .p-component{
+    background-color: #EC6337 ;
+}

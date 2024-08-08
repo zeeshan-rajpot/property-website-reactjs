@@ -1,0 +1,37 @@
+@media only screen and (min-width: 767px) {
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+    height: 258px !important;
+    /* width: 100% !important; */
+  }
+}
+@media only screen and (min-width: 600px) {
+  .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img {
+    height: 258px !important;
+    /* width: 100% !important; */
+  }
+}
+
+
+.react-3d-carousel .slider-container .slider-right div {
+  color: #ec6337 !important;
+  border: 1px solid #ec6337 !important;
+}
+.react-3d-carousel .slider-container .slider-left div {
+  color: #ec6337 !important;
+  border: 1px solid #ec6337 !important;
+}
+
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+  max-width: 150%;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+ 
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content img{
+height: 235px;
+margin-top: 20px;
+}
+  }

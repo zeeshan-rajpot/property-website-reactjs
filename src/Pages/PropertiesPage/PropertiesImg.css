@@ -1,0 +1,135 @@
+.dflexincol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Propertycontainer {
+  margin-top: 15vh;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .PropertiesMobileImg {
+    align-items: center !important;
+    margin-top: 2vh;
+
+  }
+
+}
+
+.Propertycontainer {
+  margin-top: 15vh;
+}
+
+
+.blureffectspan {
+
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+}
+
+
+
+
+
+
+
+
+
+
+.box {
+  position: relative;
+  display: inline-block;
+}
+
+
+.marginb20 {
+  margin-bottom: 20px;
+}
+
+
+.PropertyPageImgLeft {
+  width: 262px !important;
+  height: 150px !important;
+  border-top-left-radius: 42px;
+  border-bottom-left-radius: 42px;
+}
+
+
+.PropertyPageImgCenter {
+  width: 352px;
+  height: 323px;
+  border-radius: 42px;
+}
+
+.PropertyPageImgRight {
+  width: 262px !important;
+  height: 150px !important;
+  border-top-right-radius: 42px;
+  border-bottom-right-radius: 42px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .PropertyPageImgLeft,
+  .PropertyPageImgRight {
+    width: 75vw !important;
+    height: 200px !important;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+  }
+
+  .PropertyPageImgCenter {
+    width: 75vw !important;
+    border-radius: 0;
+  }
+}
+
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 40%;
+}
+
+.iamgeabovetext {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.9px);
+  -webkit-backdrop-filter: blur(13.9px);
+  color: white;
+  padding: 5px 35px 5px 36px;
+  font-size: 16px;
+
+}

@@ -1,0 +1,12 @@
+.AgentName {
+    background-color: transparent;
+    border-radius: 42px;
+    border: 1px solid #FC780B;
+    display: inline-block;
+    cursor: pointer;
+    color: grey;
+    font-family: Arial;
+    font-size: 10px;
+    padding: 10px 30px;
+    text-decoration: none;
+  }

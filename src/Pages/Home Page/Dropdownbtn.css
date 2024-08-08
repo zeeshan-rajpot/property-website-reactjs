@@ -1,0 +1,26 @@
+/* Add the following CSS to the "Searchsection.css" file or your custom CSS file */
+
+.dropdownbtn-container {
+    position: relative;
+  }
+  
+  .dropdownbtn-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 20px; /* Add space for the arrow */
+  }
+  
+  .dropdownbtn-select::-ms-expand {
+    display: none; /* Hide the default arrow in IE10+ */
+  }
+  
+  .dropdownbtn-arrow {
+    content: '\25BC'; /* Unicode character for downward arrow */
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Make the arrow non-interactive */
+  }
+  

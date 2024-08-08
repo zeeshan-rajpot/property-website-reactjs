@@ -1,0 +1,10 @@
+.mobilefooterbg {
+    margin-top: 30px;
+    /* margin-left: 200px; */
+    padding-top: 10px;
+    background-image: url(../images/footer\ image.jpg.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+    background-color: #FC780B;
+    background-position:  bottom right;
+  }

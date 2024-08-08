@@ -1,0 +1,25 @@
+.custom-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align items to the start and end */
+  }
+  
+  /* Add margin to the buttons for spacing */
+  .MuiPaginationItem-root.custom-prev {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+  img.MuiPaginationItem-root.custom-next:active {
+    filter: brightness(0.8); /* Adjust the brightness value as needed */
+  }
+  img.MuiPaginationItem-root.custom-prev:active {
+    filter: brightness(0.8); /* Adjust the brightness value as needed */
+  }
+  
+  .MuiPaginationItem-root.custom-next {
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .css-m509op-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+border-radius: 21px;
+  }

@@ -1,0 +1,50 @@
+.answer-block{
+    display: grid !important;
+    gap :20px;
+}
+.answer-block button{
+    background-color: #ffffff;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ec6437;
+    font-family: Arial;
+    font-size: 19px;
+    padding: 12px 63px;
+    text-decoration: none;
+    /* width: 50%; */
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.selected {
+    color: white !important;
+    background-color: #ec6437 !important;
+  }
+  .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active , .css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed{
+  color: #ec6437 !important ;
+  font-size: 16px;
+  }
+  .Previous , .next{
+    background-color: #ec6437;
+    border-radius: 42px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffff;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 5px 20px;
+    text-decoration: none;
+    border: none;
+  }
+
+.Investor-word{
+    padding: 21px;
+    margin: 0;
+    font-size: 20px;
+    /* margin-top: auto; */
+    margin-bottom: 240px;
+
+    color: slategrey;
+}

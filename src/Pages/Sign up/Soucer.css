@@ -1,0 +1,13 @@
+.MuiStepIcon-root.MuiStepIcon-active ,.MuiStepIcon-root.MuiStepIcon-completed {
+color:rgb(252, 120, 11) !important ;
+}
+.MuiButton-containedPrimary{
+    background-color: rgb(252, 120, 11)  !important ;
+}
+.MuiButton-containedPrimary:hover{
+    background-color: rgb(252, 120, 11)  !important ;
+}
+
+.MuiStepIcon-text{
+font-size: 15px  !important ;
+}
