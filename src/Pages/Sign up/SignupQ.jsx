@@ -298,6 +298,9 @@ import Typography from '@mui/material/Typography';
 import Confetti from 'react-confetti';
 import CustomModal from './CustomModal '; // import the custom modal
 import './CustomModal.css'; // import the modal CSS
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
+import emailjs from 'emailjs-com';
 
 const steps = ['', '', '', ''];
 
@@ -307,7 +310,7 @@ const staticQuestions = [
     options: ['0-25,000', '25,000-40,000', '40,000-75,000', '75,000+']
   },
   {
-    question: 'Preferred investment type? (select as many as you like)',
+    question: 'Preferred investment type?',
     options: ['Residential', 'HMO', 'Commercial', 'Ground up developments']
   },
   {
@@ -324,6 +327,7 @@ const SignupQ = ({ investorId }) => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState(new Array(staticQuestions.length).fill(''));
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [showConfetti, setShowConfetti] = useState(false);
 
   const handleAnswerSelection = (answer) => {
     const updatedAnswers = [...selectedAnswers];
@@ -354,8 +358,76 @@ const SignupQ = ({ investorId }) => {
     setIsModalOpen(false);
   };
 
+  const initialValues = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: ''
+  };
+
+  const validationSchema = Yup.object({
+    firstName: Yup.string().required('First name is required'),
+    lastName: Yup.string().required('Last name is required'),
+    email: Yup.string().email('Invalid email format').required('Email is required'),
+    phoneNumber: Yup.string()
+      .matches(/^[0-9]+$/, 'Must be only digits')
+      .min(11, 'Must be exactly 11 digits')
+      .max(11, 'Must be exactly 11 digits')
+
+  });
+
+  const handleSubmit = (values, { setSubmitting, resetForm }) => {
+    console.log('Form data', values);
+    const formattedAnswers = selectedAnswers.map((answer, index) => `answer ${index + 1}: ${answer}`).join('<br>');
+
+    // Combine form data and selected answers
+    const emailData = {
+      firstName: values.firstName,
+      lastName: values.lastName,
+      email: values.email,
+      phoneNumber: values.phoneNumber,
+      selectedAnswers: formattedAnswers ,
+    };
+
+    // Send email using EmailJS
+    emailjs.send('service_dgi91bo', 'template_akizaue', emailData, '_TG5wJ1BZlZ7dhajh')
+      .then((response) => {
+        console.log('Email successfully sent!', response.status, response.text);
+        resetForm();
+        setShowConfetti(true);
+        setIsModalOpen(false);
+        alert('Thank you for registering your interest in joining Inprop, we will be in touch');
+      })
+      .catch((error) => {
+        console.error('Failed to send email. Error:', error);
+        alert('Failed to send form. Please try again.');
+      });
+
+    setSubmitting(false);
+  };
+
+  const inputStyle = {
+    width: '100%',
+    padding: '12px 20px',
+    margin: '8px 0',
+    boxSizing: 'border-box',
+    border: '2px solid #ccc',
+    borderRadius: '4px',
+    fontSize: '16px',
+    fontWeight: 'normal',
+    color: '#333',
+    transition: 'border-color 0.3s ease-in-out',
+  };
+
+  const errorStyle = {
+    color: 'red',
+    fontSize: '14px',
+    marginTop: '4px',
+  };
+
   return (
     <>
+{/* {showConfetti && <Confetti />} */}
       <Container>
         <Row className="loginrow">
           <Col lg={4} className="text-center bgimg">
@@ -411,18 +483,86 @@ const SignupQ = ({ investorId }) => {
 
       {/* Custom Modal for thank you message */}
       <CustomModal isOpen={isModalOpen} onClose={closeModal}>
-        <Confetti />
-        <h2>Thank you for registering your interest in joining Inprop, we will be in touch</h2>
- 
+      <Formik
+          initialValues={initialValues}
+          validationSchema={validationSchema}
+          onSubmit={handleSubmit}
+        >
+          {({ isSubmitting }) => (
+            <Form>
+              <div className="mb-4">
+                <label htmlFor="firstName" className="block   text-gray-700">
+                  First Name
+                </label>
+                <Field
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  style={inputStyle}
+                />
+                <ErrorMessage name="firstName" component="div" style={errorStyle} />
+              </div>
 
-        <div className=" d-flex justify-content-center">
-          <button onClick={closeModal} className=' mt-4 px-5 next'>
-            Close
-          </button>
-        </div>
+              <div className="mb-4">
+                <label htmlFor="lastName" className="block text-sm font-medium text-gray-700">
+                  Last Name
+                </label>
+                <Field
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  style={inputStyle}
+                />
+                <ErrorMessage name="lastName" component="div" style={errorStyle} />
+              </div>
+
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+                  Email
+                </label>
+                <Field
+                  type="email"
+                  id="email"
+                  name="email"
+                  style={inputStyle}
+                />
+                <ErrorMessage name="email" component="div" style={errorStyle} />
+              </div>
+
+              <div className="mb-4">
+                <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700">
+                  Phone Number (optional)
+                </label>
+                <Field
+                  type="text"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  style={inputStyle}
+                />
+                <ErrorMessage name="phoneNumber" component="div" style={errorStyle} />
+              </div>
+
+              <button
+                type="submit"
+                className=" text-white px-4 py-2 rounded-lg next w-100"
+                disabled={isSubmitting}
+              >
+                Submit
+              </button>
+              <button onClick={closeModal} className="mt-4 px-5 next w-100">
+                Close
+              </button>
+            </Form>
+          )}
+        </Formik>
       </CustomModal>
+
+
+
     </>
   );
 };
 
 export default SignupQ;
+
+{/* <h2>Thank you for registering your interest in joining Inprop, we will be in touch</h2> */}
